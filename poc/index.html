@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas FC · Boletos — Selección de asientos</title>
+  <link rel="preload" href="./data/jalisco-matrix.json" as="fetch" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;900&family=JetBrains+Mono:wght@500;700;800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <img class="crest" src="./assets/atlas-crest.svg" alt="Atlas FC" width="34" height="38" />
+        <div class="brand-txt">
+          <strong>ATLAS FC</strong>
+          <span class="by">Boletos · StadiView by Nuclea</span>
+        </div>
+      </div>
+      <div class="live" title="Disponibilidad en tiempo real">
+        <span class="pulse"></span>
+        <span id="liveCount">—</span> <em>disponibles</em>
+      </div>
+      <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+        Boletos
+        <span class="cart-count" id="cartCount">0</span>
+        <span class="cart-total" id="cartTotal">$0</span>
+      </button>
+    </header>
+
+    <!-- Event strip — se llena según el evento elegido en la pantalla de inicio -->
+    <div class="event-strip hidden" id="eventStrip">
+      <!-- Flujo ABONO -->
+      <div class="strip-abono" id="stripAbono">
+        <div class="event-meta">
+          <span class="ev-eyebrow">01 · ELIGE TU LUGAR</span>
+          <span class="ev-title">PASE ROJINEGRO · TEMPORADA 26–27</span>
+          <span class="ev-venue">Estadio Jalisco · Guadalajara · Abono anual</span>
+        </div>
+      </div>
+
+      <!-- Flujo PARTIDO (contenido dinámico) -->
+      <div class="strip-match hidden" id="stripMatch">
+        <div class="ms-meta">
+          <span class="ms-comp" id="msComp">LIGA MX · APERTURA 2026 · JORNADA 6</span>
+          <span class="ms-type">Fútbol · Primer Equipo</span>
+          <span class="ms-venue">Estadio Jalisco · Guadalajara</span>
+        </div>
+        <div class="ms-teams">
+          <div class="ms-team">
+            <span class="ms-name">ATLAS</span>
+            <img class="ms-crest" src="./assets/atlas-crest.svg" alt="Atlas" height="46" />
+          </div>
+          <span class="ms-kick" id="msKick">SÁB 22 AGO · 21:05</span>
+          <div class="ms-team away" id="msAway"></div>
+        </div>
+      </div>
+
+      <div class="strip-right">
+        <button class="change-btn" id="changeEventBtn">↺ Cambiar evento</button>
+      </div>
+    </div>
+
+    <!-- Pantalla de inicio: elegir Abono o Partido -->
+    <section class="intro hidden" id="introScreen">
+      <div class="intro-head">
+        <span class="intro-eyebrow">Boletos oficiales · Estadio Jalisco</span>
+        <h1 class="intro-title">¿Cómo quieres vivir el Jalisco?</h1>
+        <p class="intro-sub">Elige tu tipo de acceso para empezar.</p>
+      </div>
+      <div class="intro-cards">
+        <button class="intro-card" id="pickAbono">
+          <span class="ic-eyebrow">Temporada 26–27</span>
+          <span class="ic-title">Pase Rojinegro</span>
+          <span class="ic-desc">Tu mismo lugar en todos los partidos de local, toda la temporada.</span>
+          <ul class="ic-list">
+            <li>Asiento fijo garantizado</li>
+            <li>Preventas y precio preferente</li>
+            <li>Beneficios de abonado</li>
+          </ul>
+          <span class="ic-price">desde $3,395</span>
+          <span class="ic-cta">Elegir abono →</span>
+        </button>
+        <button class="intro-card" id="pickPartido">
+          <span class="ic-eyebrow">Boleto individual</span>
+          <span class="ic-title">Por partido</span>
+          <span class="ic-desc">Compra para el juego que quieras ver, sin compromiso de temporada.</span>
+          <ul class="ic-list">
+            <li>Elige el partido</li>
+            <li>Elige tu asiento</li>
+            <li>Vista 3D desde tu lugar</li>
+          </ul>
+          <span class="ic-price">desde $3,395</span>
+          <span class="ic-cta">Ver partidos →</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Pantalla de partidos (rama PARTIDO) -->
+    <section class="matches hidden" id="matchScreen">
+      <div class="matches-head">
+        <button class="back-link" id="matchBack">← Volver a eventos</button>
+        <h1 class="matches-title">Próximos partidos</h1>
+        <p class="matches-sub">Elige el partido para el que quieres boletos.</p>
+      </div>
+      <div class="match-list" id="matchList"></div>
+    </section>
+
+    <main class="stage hidden" id="buyStage">
+      <!-- LEFT: stadium / section -->
+      <section class="canvas-col">
+        <!-- Breadcrumb + toggle 2D/3D -->
+        <div class="canvas-head">
+          <div class="crumbs" id="crumbs">
+            <button class="crumb active" data-nav="stadium">Estadio</button>
+          </div>
+          <div class="stadium-toggle" id="stadiumToggle" role="tablist" aria-label="Vista del estadio">
+            <button data-view="2d" class="active">Mapa 2D</button>
+            <button data-view="3d">Estadio 3D</button>
+          </div>
+        </div>
+
+        <!-- Stadium bowl view -->
+        <div class="view" id="stadiumView">
+          <div class="bowl-wrap">
+            <svg id="bowl" viewBox="0 0 720 600" role="img" aria-label="Mapa del Estadio Jalisco"></svg>
+            <div class="bowl-hint">Toca una zona para ver sus secciones</div>
+          </div>
+        </div>
+
+        <!-- Section seat-grid view -->
+        <div class="view hidden" id="sectionView">
+          <div class="section-head">
+            <div>
+              <div class="sec-name" id="secName">Sección</div>
+              <div class="sec-sub" id="secSub"></div>
+            </div>
+            <button class="suggest-btn" id="suggestBtn" title="Ir al mejor asiento disponible">★ Asiento sugerido</button>
+          </div>
+          <div class="pitch-ref">CANCHA</div>
+          <div class="grid-scroll">
+            <div class="seatgrid" id="seatGrid"></div>
+          </div>
+          <div class="legend">
+            <span><i class="sw avail"></i> Disponible</span>
+            <span><i class="sw sel"></i> Seleccionado</span>
+            <span><i class="sw sug"></i> Sugerido</span>
+            <span><i class="sw sold"></i> Vendido</span>
+            <span><i class="sw resv"></i> Apartado</span>
+          </div>
+        </div>
+
+        <!-- Estadio 3D (vista general → detalle del asiento) -->
+        <div class="view hidden" id="stadium3dView">
+          <div class="s3d-wrap">
+            <iframe id="s3dFrame" title="Estadio 3D — vista general" allow="autoplay"></iframe>
+            <div class="s3d-load" id="s3dLoad">Cargando estadio 3D…</div>
+          </div>
+          <div class="s3d-hint">Arrastra para mirar alrededor · haz clic en cualquier asiento para ver la vista desde ahí</div>
+        </div>
+      </section>
+
+      <!-- RIGHT: info panel -->
+      <aside class="panel-col">
+        <!-- Default: zone list -->
+        <div class="panel" id="zonePanel">
+          <div class="panel-head">
+            <h2>Zonas</h2>
+            <span class="panel-meta" id="panelMeta">Clausura 26–27</span>
+          </div>
+          <p class="panel-note">Disponibilidad y precio reales por zona.</p>
+          <div class="list-head"><span>Zona</span><span>Desde</span></div>
+          <div class="zone-list" id="zoneList"></div>
+        </div>
+
+        <!-- Seat detail -->
+        <div class="panel hidden" id="seatPanel">
+          <div class="seat-badge" id="seatBadge">Asiento</div>
+          <div class="seat-loc" id="seatLoc"></div>
+          <div class="view-score" id="viewScore"></div>
+          <div class="price-row">
+            <span>Precio</span>
+            <strong id="seatPrice">$0</strong>
+          </div>
+          <p class="tax-note">Precio real del inventario · incluye impuestos y comisiones</p>
+          <button class="v3d-btn" id="v3dBtn">▶ Ver en 3D — vista desde tu asiento</button>
+          <button class="add-btn" id="addBtn">Agregar al carrito</button>
+          <div class="diff-badges">
+            <span class="db">Vista estimada por asiento</span>
+            <span class="db">Sugerencia inteligente</span>
+            <span class="db">Disponibilidad en vivo</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Cart drawer -->
+    <div class="drawer-scrim hidden" id="scrim"></div>
+    <aside class="drawer hidden" id="drawer" aria-label="Carrito">
+      <div class="drawer-head">
+        <h2>Tu carrito</h2>
+        <button class="close-x" id="closeCart" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="drawer-items" id="drawerItems"></div>
+      <div class="drawer-foot">
+        <div class="foot-total"><span>Total</span><strong id="drawerTotal">$0</strong></div>
+        <button class="pay-btn" id="payBtn">Continuar al pago</button>
+        <p class="foot-note">PoC — el pago real usaría el mismo procesador tokenizado (Mercado Pago/Adyen). Aquí no se cobra.</p>
+      </div>
+    </aside>
+
+    <!-- Modal Vista 3D — estadio 3D del repo base incrustado -->
+    <div class="v3d-scrim hidden" id="v3dScrim"></div>
+    <aside class="v3d-modal hidden" id="v3dModal" aria-label="Vista 3D del estadio">
+      <div class="v3d-head">
+        <div class="v3d-ttl">
+          <strong id="v3dTitle">Vista 3D</strong>
+          <span id="v3dSub"></span>
+        </div>
+        <button class="close-x" id="v3dClose" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="v3d-body">
+        <div class="v3d-load" id="v3dLoad">Cargando vista 3D…</div>
+        <iframe id="v3dFrame" title="Vista 3D del estadio" allow="autoplay; fullscreen"></iframe>
+      </div>
+      <div class="v3d-note">Vista 3D representativa de tu zona · en producción usa el modelo geométrico exacto del Estadio Jalisco</div>
+    </aside>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
