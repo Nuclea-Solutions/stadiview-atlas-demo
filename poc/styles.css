@@ -143,15 +143,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .change-btn:hover { color: #fff; border-color: var(--red); }
 
 /* ---------- Stage ---------- */
+/* fila 1: breadcrumb/toggle (solo col izq) · fila 2: mapa + panel alineados */
 .stage {
-  flex: 1; display: grid; grid-template-columns: 1fr 340px; gap: 20px;
+  flex: 1; display: grid; grid-template-columns: 1fr 340px;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "head ." "canvas panel";
+  column-gap: 20px; row-gap: 16px;
   padding: 22px 24px; max-width: 1220px; width: 100%; margin: 0 auto;
 }
-@media (max-width: 860px) { .stage { grid-template-columns: 1fr; } }
+.canvas-head { grid-area: head; }
+.canvas-col { grid-area: canvas; }
+.panel-col { grid-area: panel; }
+@media (max-width: 860px) {
+  .stage { grid-template-columns: 1fr; grid-template-areas: "head" "canvas" "panel"; }
+}
 .canvas-col { min-width: 0; }
 
 /* Breadcrumb + toggle 2D/3D */
-.canvas-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.canvas-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .stadium-toggle { display: inline-flex; border: 1px solid var(--line-2); border-radius: var(--radius); overflow: hidden; flex: none; }
 .stadium-toggle button { font-family: var(--mono); font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; padding: 7px 13px; color: var(--muted); background: transparent; transition: background .12s ease, color .12s ease; }
 .stadium-toggle button + button { border-left: 1px solid var(--line-2); }
@@ -164,9 +173,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .crumbs .sep { color: var(--line-2); }
 
 /* ---------- Bowl ---------- */
-.bowl-wrap { position: relative; background: var(--feature-wash), var(--surface-1); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; }
+.bowl-wrap { position: relative; background: #ffffff; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 12px; }
 #bowl { width: 100%; height: auto; display: block; }
-.bowl-hint { text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted-2); padding: 8px 0 4px; }
+.bowl-hint { text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6a5c5e; padding: 8px 0 4px; }
 .zone-seg { cursor: pointer; transition: opacity .15s ease; }
 .zone-seg:hover { opacity: .85; }
 .zone-seg.dim { opacity: .22; }

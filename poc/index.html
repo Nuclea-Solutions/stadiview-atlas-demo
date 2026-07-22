@@ -111,19 +111,19 @@
     </section>
 
     <main class="stage hidden" id="buyStage">
+      <!-- Breadcrumb + toggle 2D/3D (fila superior, solo sobre la columna del mapa) -->
+      <div class="canvas-head">
+        <div class="crumbs" id="crumbs">
+          <button class="crumb active" data-nav="stadium">Estadio</button>
+        </div>
+        <div class="stadium-toggle" id="stadiumToggle" role="tablist" aria-label="Vista del estadio">
+          <button data-view="2d" class="active">Mapa 2D</button>
+          <button data-view="3d">Estadio 3D</button>
+        </div>
+      </div>
+
       <!-- LEFT: stadium / section -->
       <section class="canvas-col">
-        <!-- Breadcrumb + toggle 2D/3D -->
-        <div class="canvas-head">
-          <div class="crumbs" id="crumbs">
-            <button class="crumb active" data-nav="stadium">Estadio</button>
-          </div>
-          <div class="stadium-toggle" id="stadiumToggle" role="tablist" aria-label="Vista del estadio">
-            <button data-view="2d" class="active">Mapa 2D</button>
-            <button data-view="3d">Estadio 3D</button>
-          </div>
-        </div>
-
         <!-- Stadium bowl view -->
         <div class="view" id="stadiumView">
           <div class="bowl-wrap">
