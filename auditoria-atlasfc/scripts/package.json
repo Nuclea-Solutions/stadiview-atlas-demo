@@ -1,0 +1,9 @@
+{
+  "name": "auditoria-atlasfc-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Scripts de solo lectura para auditar atlasfc.com.mx (1 req/s, respeta robots.txt, máx. ~50 URLs)",
+  "dependencies": {
+    "lighthouse": "12.8.2"
+  }
+}
