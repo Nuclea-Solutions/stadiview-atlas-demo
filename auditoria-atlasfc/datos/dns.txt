@@ -1,0 +1,28 @@
+== atlasfc.com.mx&type=NS
+   2 ns1.dnsimple.com.
+   2 ns2.dnsimple-edge.net.
+   2 ns3.dnsimple.com.
+   2 ns4.dnsimple-edge.org.
+== atlasfc.com.mx&type=A
+   1 198.202.211.1
+== www.atlasfc.com.mx&type=CNAME
+   5 cdn.webflow.com.
+== www.atlasfc.com.mx&type=A
+   5 cdn.webflow.com.
+   1 198.202.211.1
+== atlasfc.com.mx&type=MX
+   15 1 smtp.google.com.
+== atlasfc.com.mx&type=TXT
+   16 "v=spf1 include:_spf.google.com -all"
+== _dmarc.atlasfc.com.mx&type=TXT
+   (sin respuesta) ns1.dnsimple.com. admin.dnsimple.com. 1569897881 86400 7200 604800 300
+== atlasfc.com.mx&type=CAA
+   (sin respuesta) ns1.dnsimple.com. admin.dnsimple.com. 1569897881 86400 7200 604800 300
+== shop.atlasfc.com.mx&type=CNAME
+   (sin respuesta) ns1.dnsimple.com. admin.dnsimple.com. 1569897881 86400 7200 604800 300
+== google._domainkey.atlasfc.com.mx&type=TXT
+   (sin respuesta)
+== shop.atlasfc.com.mx&type=A
+   1 23.227.38.65
+== _dmarc.atlasfc.com.mx&type=CNAME
+   (sin respuesta)

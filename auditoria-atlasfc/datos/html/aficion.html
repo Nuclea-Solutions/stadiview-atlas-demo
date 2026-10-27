@@ -1,0 +1,1381 @@
+<!DOCTYPE html><!-- Last Published: Tue Oct 27 2026 19:07:08 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="atlasfc.com.mx" data-wf-page="69fcf3ea92d2cdb9abbec2ae" data-wf-site="69fcf3ea92d2cdb9abbec2bb" lang="es-MX"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Afición</title><meta content="Afición" property="og:title"/><meta content="Afición" name="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/css/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.shared.e814e99e6.css" rel="stylesheet" type="text/css" integrity="sha384-6BTpnmzK9S6rxXZTMVCcX4A4Hc5HNwx6I1hNWSjpxlVQFiXcamXJO7vdO3wBcnIp" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Anton:300,400,500,600,700","Bebas Neue:300,400,500,600,700","Inter:300,400,500,600,700","JetBrains Mono:300,400,500,600,700","Lexend:300,400,500,600,700","Saira Condensed:300,400,500,600,700"]  }});</script><script src="https://use.typekit.net/gsv1pnq.js" type="text/javascript"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec44b_favicon.png" rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)"/><link href="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec403_favicon.svg" rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: dark)"/><link href="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec44c_webclip.png" rel="apple-touch-icon"/><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push.apply(w[g],Array.isArray(i)?i:[i]);})(window,['G-C69DE74GF3'],'google_tags_first_party');</script><script async="" src="/xa5e8du3i6ydNjlmY2YzZWE5MmQyY2RiOWFiYmVjMmJi/5YHj9eHF-aHJ1ZXPyveg3Rko4jg"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('set', 'developer_id.dZGVlNj', true);gtag('set', 'developer_id.dYWYxNW', true);gtag('js', new Date());gtag('config', 'G-C69DE74GF3');</script><script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script><style>
+/* ===== Nav sobre secciones claras ===== */
+/* Logo Atlas: NO invertir, queda rojo/blanco como es */
+/* Logo Caliente: sí invertir a negro */
+.nav--on-light .caliente-navbar.w-embed {
+  filter: invert(1);
+}
+/* Texto "Atlas FC" → negro */
+.nav--on-light .title-style-1 {
+  color: #0A0A0E !important;
+}
+/* "FUNDADO EN 1916" → negro (quita el blanco forzado) */
+.nav--on-light .menu-name-team-container .body-xsmall {
+  color: #0A0A0E !important;
+}
+/* Hamburger / texto MENÚ → negro */
+.nav--on-light .w-nav-button,
+.nav--on-light .button-group.navbar {
+  color: #0A0A0E !important;
+}
+/* ===== FIX: botones Tienda/Boletos sobre fondo claro ===== */
+.nav--on-light .button-group.navbar .button,
+.nav--on-light .button-group.navbar.mobile .button {
+  color: #0A0A0E !important;
+  border-color: #0A0A0E !important;
+}
+/* ===== HOVER: hamburger SIEMPRE blanco (gana sobre on-light) ===== */
+.button:hover .menu-icon,
+.button:hover,
+.nav--on-light .button:hover .menu-icon,
+.nav--on-light .button:hover {
+  color: #FFFFFF !important;
+}
+.button:hover .menu-icon svg path,
+.nav--on-light .button:hover .menu-icon svg path {
+  fill: #FFFFFF !important;
+}
+/* ===== Nav sobre secciones claras — MOBILE ===== */
+@media screen and (max-width: 767px) {
+  .nav--on-light .button.nav-bar.mobile {
+    filter: invert(1);
+  }
+  .nav--on-light .w-nav-button .w-icon-nav-menu {
+    color: #0A0A0E !important;
+  }
+  .nav--on-light .menu-line,
+  .nav--on-light .hamburger-line {
+    background-color: #0A0A0E !important;
+  }
+}        /* ← cierra el @media (esta llave faltaba) */
+</style>
+<!-- =============================================
+     SWIPER + COMPONENTES
+     ============================================= -->
+<style>
+  /* ── Variables ── */
+  :root { --swiper-theme-color: #ffffff; }
+
+  /* ── Base ── */
+  .swiper { overflow: visible; }
+  .swiper-wrapper { align-items: stretch; }
+  .swiper-slide {
+    overflow: hidden;
+    transform: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+  }
+  .swiper-slide img,
+  .swiper-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .swiper-slide img.icon-1x1-small {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex: 0 0 auto;
+  }
+
+  /* ── Pagination (global) ── */
+  .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+  }
+  .swiper-pagination-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 5px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.3) !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 24px;
+    background: #ffffff !important;
+  }
+
+  /* ── Arrows (global — estilo .slider-arrow) ── */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    flex: 0 0 auto;
+    border-radius: 100%;
+    background-color: #1a1a1a99;
+    border: 1px solid var(--_colors---gris-medio);
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+    z-index: 10;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none !important;
+    content: none !important;
+  }
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    color: #ffffff !important;
+    flex: 0 0 auto;
+  }
+  .swiper-button-prev svg { transform: scaleX(-1); }
+  .swiper-button-next path,
+  .swiper-button-prev path { fill: currentColor !important; }
+  .swiper-button-disabled { opacity: 0.4; }
+
+  /* ─────────────────────────────────────────────
+     MATCHES
+  ───────────────────────────────────────────── */
+  .swiper-matches .swiper-pagination { display: none !important; }
+  .swiper-matches { overflow: hidden !important; }
+  .swiper-matches .swiper-slide.match {
+    width: max-content !important;
+    overflow: visible !important;
+    transform: unset !important;
+    transition: unset !important;
+  }
+  .swiper-matches .swiper-button-next,
+  .swiper-matches .swiper-button-prev {
+    width: 1.8rem;
+    height: 1.8rem;
+    min-width: 1.8rem;
+    min-height: 1.8rem;
+  }
+  .swiper-button-prev.matches { left: 8rem !important; }
+  .swiper-button-next.matches { right: 2% !important; }
+  .swiper-matches .swiper-wrapper { padding-left: 8rem; }
+  .swiper-matches .swiper-wrapper::after {
+    content: '';
+    display: block;
+    min-width: 5rem;
+    flex-shrink: 0;
+  }
+  .vertical-match-container,
+  .vertical-match-container-current {
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+  }
+  .vertical-match-container,
+  .vertical-match-container-current {
+    position: relative;
+  }
+  .vertical-match-container .tag-text.absolute,
+  .vertical-match-container-current .tag-text.absolute {
+    position: absolute;
+    top: 0.50rem;
+    right: .50rem;
+    left: auto;
+    bottom: auto;
+    margin: 0;
+    text-align: right;
+  }
+
+  /* ─────────────────────────────────────────────
+     PLAYERS
+  ───────────────────────────────────────────── */
+  .swiper-players .swiper-button-next,
+  .swiper-players .swiper-button-prev {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+  .swiper-players .swiper-button-next svg,
+  .swiper-players .swiper-button-prev svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .swiper-players { padding-bottom: 40px !important; }
+  .swiper-players .swiper-slide { overflow: visible; }
+  .swiper-players .swiper-pagination { display: none !important; }
+
+  /* FIX: chevron blanco forzado + círculo visible (evita el azul por currentColor) */
+  .swiper-players .swiper-button-next,
+  .swiper-players .swiper-button-prev {
+    background-color: #1a1a1a99 !important;
+    border: 1px solid var(--_colors---gris-medio) !important;
+    border-radius: 100% !important;
+    color: #ffffff !important;
+  }
+  .swiper-players .swiper-button-next svg path,
+  .swiper-players .swiper-button-prev svg path {
+    fill: #ffffff !important;
+  }
+
+  /* ─────────────────────────────────────────────
+     VIDEO HOVER (tarjetas jugadores)
+  ───────────────────────────────────────────── */
+  .video-hover-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .video-hover {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .video-hover.ready { opacity: 1; }
+
+  /* ─────────────────────────────────────────────
+     MOBILE
+  ───────────────────────────────────────────── */
+  @media (max-width: 767px) {
+    .swiper-matches .swiper-button-next,
+    .swiper-matches .swiper-button-prev { display: none !important; }
+    .swiper-players .swiper-button-prev,
+    .swiper-players .swiper-button-next { display: none !important; }
+    .swiper-slide .video-hover {
+      object-fit: cover !important;
+      object-position: center top;
+      background: #000;
+    }
+  }
+
+</style>
+
+<style>
+  .button-group.navbar.mobile {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform;
+  }
+  .button-group.navbar.mobile.cta-hidden {
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<style>
+/* Guard: impide scroll horizontal de página (los sliders full-bleed lo necesitan) */
+html, body { overflow-x: clip; }
+
+/* Menú mobile scrollable */
+@media screen and (max-width: 991px) {
+  .nav-section .w-nav-overlay {
+    height: 100vh;
+    height: 100dvh !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .nav-menu.w-nav-menu {
+    height: auto !important;
+    min-height: 100%;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+</style><style>
+@media screen and (max-width: 767px) {
+  .container-hero-mask {
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    display: block !important;
+  }
+  .cms-card {
+    width: max-content !important;
+    min-width: 100%;
+  }
+  .cms-collection-list {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    grid-template-columns: none !important;
+    width: max-content;
+  }
+  .cms-collection-list .collection-item {
+    flex: 0 0 85vw;
+    scroll-snap-align: center;
+  }
+  .container-hero-mask::-webkit-scrollbar { display: none; }
+  .container-hero-mask { scrollbar-width: none; }
+}
+</style>
+
+<style>
+@media screen and (min-width: 768px) {
+  .swiper-abonos {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-width: 0;
+  }
+  .swiper-abonos .overlay-card {
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+  }
+</style></head><body><div data-animation="over-left" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-section w-nav"><div class="container navigation"><div class="inner-flex-mobile-only"><div data-w-id="885a8a97-d39b-427b-a03c-03080efc7809" class="button nav-bar w-nav-button"><div class="button-group navbar desktop"><div data-figma-id="2791:1695" class="menu-icon"><div class="image-20 w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 7.5C2.8125 6.98223 3.23223 6.5625 3.75 6.5625H26.25C26.7678 6.5625 27.1875 6.98223 27.1875 7.5C27.1875 8.0178 26.7678 8.4375 26.25 8.4375H3.75C3.23223 8.4375 2.8125 8.0178 2.8125 7.5Z" fill="currentColor"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 22.5C2.8125 21.9822 3.23223 21.5625 3.75 21.5625H26.25C26.7678 21.5625 27.1875 21.9822 27.1875 22.5C27.1875 23.0178 26.7678 23.4375 26.25 23.4375H3.75C3.23223 23.4375 2.8125 23.0178 2.8125 22.5Z" fill="currentColor"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8125 15C7.8125 14.4822 8.2322 14.0625 8.75 14.0625H26.25C26.7678 14.0625 27.1875 14.4822 27.1875 15C27.1875 15.5178 26.7678 15.9375 26.25 15.9375H8.75C8.2322 15.9375 7.8125 15.5178 7.8125 15Z" fill="currentColor"/>
+</svg></div></div><div class="vertical-divider variant-1"></div><p class="captions margin-0">Menú</p></div></div><a data-w-id="1fa09111-bbc4-c3d0-cb4f-1fa0909bd6aa" href="/" class="button-group absolute w-nav-brand"><img class="logo-menu" src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec2fb_Atlas.svg" data-figma-image-id="69a09be4e2a3567b5e13a185" alt="" data-figma-id="2791:1701" data-figma-image-hash="6b8ab700cea74a6b8f789e6305955cd0" loading="lazy"/><div class="menu-name-team-container"><p class="title-style-1 bold">ATLAS FC</p><div class="body-xsmall text-color-white none-state">FUNDADO EN 1916</div></div></a><div class="button-group"><a href="https://online.caliente.mx/page?member=atlas&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=54300998&amp;lp=57942151&amp;var1=footerweb" class="w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a3d861754134849e8b7872a_caliente.mx_.svg" loading="lazy" width="82" alt="" class="caliente-navbar"/></a><div class="button-group navbar mobile"><a href="https://shop.atlasfc.com.mx/" class="button capri2 w-button">Tienda</a><a href="/aficion" aria-current="page" class="button is-secondary capri3 w-button w--current">boletos</a></div><div class="vertical-divider"></div><div class="button nav-bar mobile w-nav-button"><div data-figma-id="2791:1694" class="button-group"><div data-figma-id="2791:1695" class="menu-icon"><div class="image-20 w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 7.5C2.8125 6.98223 3.23223 6.5625 3.75 6.5625H26.25C26.7678 6.5625 27.1875 6.98223 27.1875 7.5C27.1875 8.0178 26.7678 8.4375 26.25 8.4375H3.75C3.23223 8.4375 2.8125 8.0178 2.8125 7.5Z" fill="currentColor"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8125 22.5C2.8125 21.9822 3.23223 21.5625 3.75 21.5625H26.25C26.7678 21.5625 27.1875 21.9822 27.1875 22.5C27.1875 23.0178 26.7678 23.4375 26.25 23.4375H3.75C3.23223 23.4375 2.8125 23.0178 2.8125 22.5Z" fill="currentColor"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8125 15C7.8125 14.4822 8.2322 14.0625 8.75 14.0625H26.25C26.7678 14.0625 27.1875 14.4822 27.1875 15C27.1875 15.5178 26.7678 15.9375 26.25 15.9375H8.75C8.2322 15.9375 7.8125 15.5178 7.8125 15Z" fill="currentColor"/>
+</svg></div></div></div></div><div data-figma-id="2824:7026" class="button-group navbar"><a href="https://shop.atlasfc.com.mx/" class="button capri2 w-button">Tienda</a><a href="/aficion" aria-current="page" class="button is-secondary capri3 w-button w--current">boletos</a></div></div></div><nav role="navigation" class="nav-menu w-nav-menu"><div class="header-navbar"><a href="#" class="redirect-nav-link w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d0_atlas-nav-menu.svg" loading="lazy" alt=""/></a><a href="#" class="close-nav-link w-inline-block"><div>cerrar</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3cf_close-nav.svg" loading="lazy" alt=""/></a></div><div class="nav"><div data-w-id="1fa09111-bbc4-c3d0-cb4f-1fa0909bd6af" class="nav-wrapper"><div class="menu-container-main"><a data-w-id="b071ec1f-143c-cd34-3cee-9f3f9d72ec8d" href="/" class="title-menu w-nav-link">varonil</a><a data-w-id="3a35d9b3-84cc-e7d0-4503-b5964615d85b" href="/home-femenil" class="title-menu w-nav-link">Femenil</a><a data-w-id="d59954ab-3184-f716-f644-750008569786" href="/noticias" class="title-menu w-nav-link">noticias</a><a data-w-id="09f002cc-99f2-da69-2676-d6723152fd1f" href="/aficion" aria-current="page" class="title-menu w-nav-link w--current">afición</a><a data-w-id="421e5356-77d8-1f35-f886-1200bb3fcf6f" href="https://shop.atlasfc.com.mx/" class="title-menu w-nav-link">tienda</a></div><div class="menu-vertical-divider"></div><div class="menu-container-secondary"><div class="menu-container"><div class="header-menu-text-container"><div class="tag-text red">Destacados</div><p class="title-style-1 black mayuscuas">Lo último del Rojinegro</p></div><a href="/patrocinadores" class="destacado-menu-container w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c6ef49cdbd39b37021ce_Patrocinadores%20banner%20cover.avif" loading="lazy" width="Auto" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c6ef49cdbd39b37021ce_Patrocinadores%20banner%20cover-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c6ef49cdbd39b37021ce_Patrocinadores%20banner%20cover.avif 533w" sizes="100vw" class="image-destacado"/><div class="header-menu-text-container"><div class="container-flex-hor"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2aeddd8e2544274eab2a62_estrella.svg" loading="lazy" alt=""/><div class="body-regular red">Patrocinadores</div></div><p class="subtitle-blog bold black">Conoce las marcas que nos impulsan</p><div class="captions grey">aliados rojinegros</div></div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec331_Icon.svg" loading="lazy" alt=""/></a><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/post/las-voces-del-triunfo-rojinegro-ante-puebla-zenon-monzon-y-pepe-martin-agradecen-a-la-fiel-el-aliento" class="destacado-menu-container w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec37c_image-138.avif" loading="lazy" width="Auto" height="Auto" alt="" class="image-destacado"/><div class="header-menu-text-container"><div class="body-regular grey">Atlas FC</div><p class="subtitle-blog bold black">Las voces del triunfo Rojinegro ante Puebla: Zenón, Monzón y Pepe Martín agradecen a La Fiel el aliento</p><div class="captions grey">October 27, 2026</div></div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec331_Icon.svg" loading="lazy" alt=""/></a></div></div></div><a href="https://atlasfcshop.mx/products/jersey-local-manga-corta-para-caballero-25-26" class="destacado-menu-container w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec37e_image-139.avif" loading="lazy" width="Auto" height="Auto" alt="" class="image-destacado"/><div class="header-menu-text-container"><div class="body-regular grey">Tienda</div><p class="subtitle-blog bold black">Compra tu Jersey oficial</p><div class="captions grey">disponible ahora</div></div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec331_Icon.svg" loading="lazy" alt=""/></a></div><div class="overlay-menu-container primer-equipo"><a href="https://www.atlasfc.com.mx/#noticias" class="sub-menu-link w-inline-block"><div>Noticias Varonil</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/#plantel" class="sub-menu-link w-inline-block"><div>Plantel</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/#metricas" class="sub-menu-link w-inline-block"><div>Métricas y<span class="grey"> </span>Estadísticas</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/#patrocinadores" class="sub-menu-link w-inline-block"><div>Patrocinadores</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a></div><div class="overlay-menu-container femenil"><a href="https://www.atlasfc.com.mx/home-femenil/#noticias" class="sub-menu-link w-inline-block"><div>Noticias Femenil</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/home-femenil/#plantel" class="sub-menu-link w-inline-block"><div>plantel</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/home-femenil/#metricas" class="sub-menu-link w-inline-block"><div>Métricas y<span class="grey"> </span>Estadísticas</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/home-femenil/#patrocinadores" class="sub-menu-link w-inline-block"><div>Patrocinadores</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a></div><div class="overlay-menu-container noticias"><a href="/noticias" class="sub-menu-link w-inline-block"><div>Últimas noticias</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/unete-a-la-fiel" class="sub-menu-link w-inline-block"><div>únete a la fiel</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a></div><div class="overlay-menu-container aficion"><a href="https://cloud.atlasrojinegro.com/experiencias-rojinegras" class="sub-menu-link w-inline-block"><div>Atlas Kids</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=FCLnBdi7pUyURE3Bb1fnkjz02REGIoROqQ2Q-ioLTFxUQzdWWUpESFJHRjZGT01OUEVIM0U3SDdOVC4u" class="sub-menu-link w-inline-block"><div>experiencias para empresas</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/aficion#recursos" class="sub-menu-link w-inline-block"><div>manual de aficionado</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/visorias" class="sub-menu-link w-inline-block"><div>Visorías</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://www.atlasfc.com.mx/aficion#estadio-seguro" class="sub-menu-link w-inline-block"><div>estadio seguro</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a></div><div class="overlay-menu-container tienda"><a href="https://shop.atlasfc.com.mx/collections/novedades-1" class="sub-menu-link w-inline-block"><div>novedades</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://shop.atlasfc.com.mx/collections/jersey-1" class="sub-menu-link w-inline-block"><div>jerseys</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://shop.atlasfc.com.mx/collections/los-mas-vendidos" class="sub-menu-link w-inline-block"><div>lo más vendido</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a><a href="https://shop.atlasfc.com.mx/collections/outlet" class="sub-menu-link w-inline-block"><div>outlet</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ef_Frame.svg" loading="lazy" width="24" height="24" alt="" class="frame-style"/></a></div></div></div></div><div class="footer-navbar"><div class="button-group"><a href="https://www.facebook.com/AtlasFC" target="_blank" class="tag-text grey menu">facebook</a><a href="https://www.instagram.com/atlasfc" target="_blank" class="tag-text grey menu">Instagram</a><a href="https://x.com/atlasfc" target="_blank" class="tag-text grey menu">x</a><a href="https://www.youtube.com/@atlasfc" target="_blank" class="tag-text grey menu">youtube</a><a href="https://www.tiktok.com/@atlasfc?is_from_webapp=1&amp;sender_device=pc" target="_blank" class="tag-text grey menu">tiktok</a><a href="https://discord.com/invite/atlasfc" target="_blank" class="tag-text grey menu">discord</a></div><div class="button-group"><a href="https://www.atlasfc.com.mx/documentacion-oficial/terminos-y-condiciones" class="captions grey">Términos y Condiciones</a><a href="https://www.atlasfc.com.mx/documentacion-oficial/politicas-de-privacidad" class="captions grey">Políticas de Privacidad</a><div class="captions grey">© 2026 Atlas FC</div><div class="captions grey">Powered by Nuclea Studio</div></div></div></nav></div></div><div class="page-wrapper"><div class="main-wrapper"><div data-nav-theme="dark" class="padding-global"><div class="section-home-header padding-section-small"><div class="spacer-huge"></div><div data-figma-id="2791:1726" class="title-container max-width-medium"><div class="tag-text golden">temporada 26-27</div><h1>VIVE LA MAGIA DEL JALISCO</h1><p class="text-style-muted">Boletos, membresías y todo lo que necesita La Fiel para vivir cada partido Rojinegro</p></div><div class="spacer-medium"></div><div class="container-flex-hor"><a href="https://atlasfc.com.mx/aficion#programas" class="button is-secondary capri1 w-inline-block"><div><span class="red">01</span> boletos y abonos</div></a><a href="https://atlasfc.com.mx/aficion#programas" class="button is-secondary capri1 w-inline-block"><div><span class="red">02</span> programas</div></a><a href="https://atlasfc.com.mx/aficion#zona" class="button is-secondary capri1 w-inline-block"><div><span class="red">03</span> en el estadio</div></a></div><div class="spacer-xhuge"></div><div class="apagar-cuando-no-hay-partidos"><div class="spacer-xhuge"></div><div data-figma-id="2791:1726" class="title-container"><div class="red-line-title-wrapper"><div class="tag-text"><span class="red">01 · AGENDA rojinegra</span></div></div><div class="title-container tab-1"><h2>PRÓXIMOS PARTIDOS</h2><p class="text-style-muted">Asegura tu lugar en la siguiente jornada rojinegra. Vive cada gol desde el Estadio Jalisco.</p></div><div class="title-container tab-2"><h2>ADQUIERE TU PACK Y AHORRA</h2><p class="text-style-muted">Los duelos que no te puedes perder, juntos y con descuento. Elige tu pack y asegura tu lugar en la casa rojinegra.</p></div><div class="title-container tab-3"><h2>TU PASE ROJINEGRO</h2><p class="text-style-muted">Adquiere tu pase Rojinegro</p></div></div><div class="container-hero-columns"><div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs-boletos-container w-tabs"><div class="tabs-menu w-tab-menu"><a data-w-tab="Tab 1" data-w-id="a2968fd3-b667-654e-5b23-63e17ae523ac" class="tab-link w-inline-block w-tab-link w--current"><div>BOLETOS</div></a><a data-w-tab="Tab 2" data-w-id="a2968fd3-b667-654e-5b23-63e17ae523af" class="tab-link w-inline-block w-tab-link"><div>PACKS</div></a><a data-w-tab="Tab 3" data-w-id="a2968fd3-b667-654e-5b23-63e17ae523b2" class="tab-link w-inline-block w-tab-link"><div>ABONOS</div></a></div><div class="tabs-content w-tab-content"><div data-w-tab="Tab 1" class="w-tab-pane w--tab-active"><div class="container-hero-mask"><div class="cms-card w-dyn-list"><div class="empty-state---cms-card w-dyn-empty"><div class="text-style-allcaps">No existen próximos eventos para <strong>atlas FC</strong></div><a href="/aficion" aria-current="page" class="button w-inline-block w--current"><div>Consulta todos los eventos disponibles</div></a></div></div></div></div><div data-w-tab="Tab 2" class="w-tab-pane"><div class="container-hero-mask"><div class="cms-card w-dyn-list"><div class="empty-state---cms-card w-dyn-empty"><div class="text-style-allcaps">No existen próximos eventos para <strong>atlas FC</strong></div><a href="/aficion" aria-current="page" class="button w-inline-block w--current"><div>Consulta todos los eventos disponibles</div></a></div></div></div></div><div data-w-tab="Tab 3" class="w-tab-pane"><div class="container-hero-mask"><div class="cms-card swiper-abonos w-dyn-list"><div class="empty-state---cms-card w-dyn-empty"><div class="text-style-allcaps">No existen próximos eventos para <strong>atlas FC</strong></div><a href="/aficion" aria-current="page" class="button w-inline-block w--current"><div>Consulta todos los eventos disponibles</div></a></div></div></div></div></div></div><a href="https://atlasfc.com.mx/aficion#preguntas" class="button is-icon preguntas-frecuentes w-inline-block"><div>preguntas frecuentes</div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a17522ac47ba0e1d130da4e_arrow-white.svg" loading="lazy" alt=""/></a></div></div><div data-delay="4000" data-animation="slide" class="hero-bg-aficion-container w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"><div class="slider-aficion w-slider-mask"><div class="image-afici-n-bg-1 w-slide"></div><div class="image-afici-n-bg-2 w-slide"></div></div></div></div></div><div data-nav-theme="dark" class="section-matches"><div class="custom-swiper-container"><div class="swiper_component"><div class="swiper swiper-matches"><div class="swiper-wrapper matches"><div class="swiper-slide match"><div data-figma-id="2791:1865" class="vertical-match-container"><p data-figma-id="2791:1867" class="tag-text absolute grey">J10</p><div data-figma-id="2791:1868" class="chip-container"><p data-figma-id="2791:1870" class="pretitle">ATLAS</p><p data-figma-id="2791:1872" class="title-style-1">2-1</p><p data-figma-id="2791:1870" class="pretitle">CRUZ AZUL</p></div></div></div><div class="swiper-slide match"><div data-figma-id="2791:1887" class="vertical-match-container-current"><div data-figma-id="2791:1868" class="chip-container"><p data-figma-id="2791:1870" class="pretitle">ATLAS</p><p data-figma-id="2791:1872" class="title-style-1">2-1</p><p data-figma-id="2791:1870" class="pretitle">CRUZ AZUL</p></div><div data-figma-id="2791:1741" class="tag is-alternate"><p data-figma-id="2791:1742" class="body-small">próximo</p></div></div></div></div><div class="swiper-button-next matches"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+  <path d="M4.8125 11.8125C4.70061 11.8125 4.58861 11.7697 4.50318 11.6843C4.33223 11.5133 4.33223 11.2365 4.50318 11.0657L8.56887 6.99999L4.50318 2.9343C4.33223 2.76335 4.33223 2.48652 4.50318 2.31567C4.67414 2.14483 4.95097 2.14472 5.12181 2.31567L9.49681 6.69067C9.66776 6.86163 9.66776 7.13846 9.49681 7.3093L5.12181 11.6843C5.03639 11.7697 4.92439 11.8125 4.8125 11.8125Z" fill="white"/>
+</svg></div></div><div class="swiper-button-prev matches"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" style="transform: scaleX(-1)">
+  <path d="M4.8125 11.8125C4.70061 11.8125 4.58861 11.7697 4.50318 11.6843C4.33223 11.5133 4.33223 11.2365 4.50318 11.0657L8.56887 6.99999L4.50318 2.9343C4.33223 2.76335 4.33223 2.48652 4.50318 2.31567C4.67414 2.14483 4.95097 2.14472 5.12181 2.31567L9.49681 6.69067C9.66776 6.86163 9.66776 7.13846 9.49681 7.3093L5.12181 11.6843C5.03639 11.7697 4.92439 11.8125 4.8125 11.8125Z" fill="white"/>
+</svg></div></div><div class="clip-path-red"><div class="title-style-3">Liga MX</div></div></div></div></div><div class="matches-background"></div></div><div id="programas" data-nav-theme="dark" class="padding-global"><div class="section-membresias"><div class="full-wrapper"><div data-figma-id="2791:1726" class="title-container"><div class="red-line-title-wrapper"><div class="tag-text"><span class="red">02 · programas y membresías</span></div></div><h2><span>MÁS CERCA DEL ROJINEGRO</span></h2><p class="text-style-muted">Membresías y experiencias para vivir Atlas FC todo el año, dentro y fuera del Jalisco.</p></div><div class="button-group align-bottom"><a href="#" class="swiper-aficion-prev w-inline-block"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+  <path d="M4.8125 11.8125C4.70061 11.8125 4.58861 11.7697 4.50318 11.6843C4.33223 11.5133 4.33223 11.2365 4.50318 11.0657L8.56887 6.99999L4.50318 2.9343C4.33223 2.76335 4.33223 2.48652 4.50318 2.31567C4.67414 2.14483 4.95097 2.14472 5.12181 2.31567L9.49681 6.69067C9.66776 6.86163 9.66776 7.13846 9.49681 7.3093L5.12181 11.6843C5.03639 11.7697 4.92439 11.8125 4.8125 11.8125Z" fill="#656565" transform="rotate(180 7 7)"/>
+</svg>
+</div></a><a href="#" class="swiper-aficion-next w-inline-block"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+  <path d="M4.8125 11.8125C4.70061 11.8125 4.58861 11.7697 4.50318 11.6843C4.33223 11.5133 4.33223 11.2365 4.50318 11.0657L8.56887 6.99999L4.50318 2.9343C4.33223 2.76335 4.33223 2.48652 4.50318 2.31567C4.67414 2.14483 4.95097 2.14472 5.12181 2.31567L9.49681 6.69067C9.66776 6.86163 9.66776 7.13846 9.49681 7.3093L5.12181 11.6843C5.03639 11.7697 4.92439 11.8125 4.8125 11.8125Z" fill="#656565"/>
+</svg></div></a></div></div><div class="swiper swiper-aficion"><div class="swiper-wrapper"><div class="swiper-slide"><div class="paquetes-container"><div data-delay="1000" data-animation="slide" class="image-card-aficion w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"><div class="w-slider-mask"><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3969dc16879eb4d698d_RENDER_PRN_1.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3969dc16879eb4d698d_RENDER_PRN_1-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3969dc16879eb4d698d_RENDER_PRN_1-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3969dc16879eb4d698d_RENDER_PRN_1-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3969dc16879eb4d698d_RENDER_PRN_1-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3969dc16879eb4d698d_RENDER_PRN_1.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397a228486a7c474a0f_RENDER_PRN_2.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397a228486a7c474a0f_RENDER_PRN_2-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397a228486a7c474a0f_RENDER_PRN_2-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397a228486a7c474a0f_RENDER_PRN_2-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397a228486a7c474a0f_RENDER_PRN_2-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397a228486a7c474a0f_RENDER_PRN_2.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3973cb43f43359dad86_RENDER_PRN_3.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3973cb43f43359dad86_RENDER_PRN_3-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3973cb43f43359dad86_RENDER_PRN_3-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3973cb43f43359dad86_RENDER_PRN_3-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3973cb43f43359dad86_RENDER_PRN_3-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c3973cb43f43359dad86_RENDER_PRN_3.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d6_79e0414e6a965153c2b6136a7852f116_Gradient.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d6_79e0414e6a965153c2b6136a7852f116_Gradient-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d6_79e0414e6a965153c2b6136a7852f116_Gradient-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d6_79e0414e6a965153c2b6136a7852f116_Gradient-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d6_79e0414e6a965153c2b6136a7852f116_Gradient-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3d6_79e0414e6a965153c2b6136a7852f116_Gradient.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c395fd85c674b1f2e10e_RENDER_PRN_5.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c395fd85c674b1f2e10e_RENDER_PRN_5-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c395fd85c674b1f2e10e_RENDER_PRN_5-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c395fd85c674b1f2e10e_RENDER_PRN_5-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c395fd85c674b1f2e10e_RENDER_PRN_5-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c395fd85c674b1f2e10e_RENDER_PRN_5.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c39781a87daf475ed919_RENDER_PRN_6.avif" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c39781a87daf475ed919_RENDER_PRN_6-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c39781a87daf475ed919_RENDER_PRN_6-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c39781a87daf475ed919_RENDER_PRN_6-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c39781a87daf475ed919_RENDER_PRN_6-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c39781a87daf475ed919_RENDER_PRN_6.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26.avif" loading="lazy" sizes="(max-width: 2000px) 100vw, 2000px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26-p-1600.avif 1600w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35c397ecd39a6f855d0ccc_RENDER_PRN_AP26.avif 2000w" alt="Atlas FC — Render Prn" class="render-image-slider-ux"/></div></div><div class="_0-opacity w-slider-arrow-left"><div class="w-icon-slider-left"></div></div><div class="_0-opacity w-slider-arrow-right"><div class="w-icon-slider-right"></div></div></div><div class="paquetes-text-container"><div class="container-flex-ver"><div class="container-icon-pases"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a358ea95ad0303f4ad25d9d_PASES%201.svg" loading="lazy" alt="" class="icon-1x1-small invert"/></div><h5>PASE ROJINEGRO</h5><div class="text-style-muted">Asegura tu lugar toda la temporada. Renovaciones abiertas con beneficios exclusivos para el abonado.</div></div><div class="max-width-full"><a href="https://fanki.co/mex/organizer/atlas" target="_blank" class="button"><div>Compra tu pase</div></a></div></div></div></div><div class="swiper-slide"><div class="paquetes-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec485_7807d3756c6c4e85d16b48f99416c3e2_EMPRESAS.avif" loading="lazy" width="Auto" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec485_7807d3756c6c4e85d16b48f99416c3e2_EMPRESAS-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec485_7807d3756c6c4e85d16b48f99416c3e2_EMPRESAS-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec485_7807d3756c6c4e85d16b48f99416c3e2_EMPRESAS.avif 876w" sizes="(max-width: 876px) 100vw, 876px" class="image-card-aficion cover"/><div class="paquetes-text-container"><div class="container-flex-ver"><div class="container-icon-pases"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a358ea8162d9d62826ab36f_EMPRESAS%201.svg" loading="lazy" alt="" class="icon-1x1-small invert"/></div><h5>EMPRESAS</h5><div class="text-style-muted">No regales beneficios, regala experiencias. Lleva a tu equipo o clientes al Estadio Jalisco a vivir Atlas FC.</div></div><div class="max-width-full"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=FCLnBdi7pUyURE3Bb1fnkjz02REGIoROqQ2Q-ioLTFxUQzdWWUpESFJHRjZGT01OUEVIM0U3SDdOVC4u" target="_blank" class="button"><div>registra tu empresa</div></a></div></div></div></div><div class="swiper-slide"><div class="paquetes-container"><div data-delay="1000" data-animation="slide" class="image-card-aficion w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"><div class="w-slider-mask"><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebbaf92497fe914bb50_1.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebbaf92497fe914bb50_1-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebbaf92497fe914bb50_1-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebbaf92497fe914bb50_1.avif 1080w" alt="Atlas FC" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc218a8ed4ef5e204a_2.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc218a8ed4ef5e204a_2-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc218a8ed4ef5e204a_2-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc218a8ed4ef5e204a_2.avif 1080w" alt="Atlas FC" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc306fd8fb35ebe887_3.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc306fd8fb35ebe887_3-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc306fd8fb35ebe887_3-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebc306fd8fb35ebe887_3.avif 1080w" alt="Atlas FC" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebb5ad0303f4ae3da46_4.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebb5ad0303f4ae3da46_4-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebb5ad0303f4ae3da46_4-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35cebb5ad0303f4ae3da46_4.avif 1080w" alt="Atlas FC" class="render-image-slider-ux"/></div></div><div class="_0-opacity w-slider-arrow-left"><div class="w-icon-slider-left"></div></div><div class="_0-opacity w-slider-arrow-right"><div class="w-icon-slider-right"></div></div></div><div class="paquetes-text-container"><div class="container-flex-ver"><div class="container-icon-pases"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a358ea9306fd8fb35d9d26b_KIDS%201.svg" loading="lazy" alt="" class="icon-1x1-small invert"/></div><h5>ATLAS KIDS</h5><div class="text-style-muted">El club oficial para los pequeños Rojinegros. Kits de bienvenida y experiencias pensadas para la afición del futuro.</div></div><div class="max-width-full"><a href="https://cloud.atlasrojinegro.com/experiencias-rojinegras" target="_blank" class="button"><div>Unirme</div></a></div></div></div></div><div class="swiper-slide"><div class="paquetes-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a3058311abd53f178f7be7b_prog-newsletter.avif" loading="lazy" width="Auto" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a3058311abd53f178f7be7b_prog-newsletter-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a3058311abd53f178f7be7b_prog-newsletter.avif 820w" sizes="(max-width: 820px) 100vw, 820px" class="image-card-aficion"/><div class="paquetes-text-container"><div class="container-flex-ver"><div class="container-icon-pases"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a358ea8040dcc1b9f118532_FIEL%201.svg" loading="lazy" alt="" class="icon-1x1-small invert"/></div><h5>ÚNETE A LA FIEL</h5><div class="text-style-muted">Noticias, convocatorias y preventas directo en tu correo. Regístrate y no te pierdas nada del Atlas.</div></div><div class="max-width-full"><a href="/unete-a-la-fiel" class="button"><div>únete</div></a></div></div></div></div><div class="swiper-slide"><div class="paquetes-container"><div data-delay="1000" data-animation="slide" class="image-card-aficion w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"><div class="w-slider-mask"><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b49cdbd39b371b111_1.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b49cdbd39b371b111_1-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b49cdbd39b371b111_1-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b49cdbd39b371b111_1.avif 1080w" alt="Atlas FC" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b99c7e95731c8ad5c_FOTO_2.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b99c7e95731c8ad5c_FOTO_2-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b99c7e95731c8ad5c_FOTO_2-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b99c7e95731c8ad5c_FOTO_2.avif 1080w" alt="Atlas FC — Foto" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b6f6c7655652bd33b_FOTO_3.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b6f6c7655652bd33b_FOTO_3-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b6f6c7655652bd33b_FOTO_3-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19b6f6c7655652bd33b_FOTO_3.avif 1080w" alt="Atlas FC — Foto" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19ab3793215d6863416_FOTO4.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19ab3793215d6863416_FOTO4-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19ab3793215d6863416_FOTO4-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19ab3793215d6863416_FOTO4.avif 1080w" alt="Atlas FC — Foto" class="render-image-slider-ux"/></div><div class="slider-ux-master w-slide"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19aaf92497fe91511f2_PORTERO.avif" loading="lazy" sizes="(max-width: 1080px) 100vw, 1080px" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19aaf92497fe91511f2_PORTERO-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19aaf92497fe91511f2_PORTERO-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a35d19aaf92497fe91511f2_PORTERO.avif 1080w" alt="Atlas FC — Portero" class="render-image-slider-ux"/></div></div><div class="_0-opacity w-slider-arrow-left"><div class="w-icon-slider-left"></div></div><div class="_0-opacity w-slider-arrow-right"><div class="w-icon-slider-right"></div></div></div><div class="paquetes-text-container"><div class="container-flex-ver"><div class="container-icon-pases"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a358ea945693f443cf2f8dd_VISORIAS%201.svg" loading="lazy" alt="" class="icon-1x1-small invert"/></div><h5>VISORIAS</h5><div class="text-style-muted">¿Sueñas con vestir el rojinegro? Pronto abriremos el registro a las visorías de fuerzas básicas Atlas.</div></div><div class="max-width-full"><a href="https://atlasfc.com.mx/visorias" class="button"><div>Ver convocatorias</div></a></div></div></div></div><div class="swiper-slide"><div class="paquetes-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2988cc062ee54a4389aa50_femenil-hero.avif" loading="lazy" width="Auto" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2988cc062ee54a4389aa50_femenil-hero-p-500.avif 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2988cc062ee54a4389aa50_femenil-hero-p-800.avif 800w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2988cc062ee54a4389aa50_femenil-hero-p-1080.avif 1080w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2988cc062ee54a4389aa50_femenil-hero.avif 1200w" sizes="100vw" class="image-card-aficion"/><div class="paquetes-text-container"><div class="container-flex-ver"><div class="container-icon-pases"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a358ea8fd4f8718f8cef3b8_ID%201.svg" loading="lazy" alt="" class="icon-1x1-small invert"/></div><h5>FAN ID</h5><div class="text-style-muted">Tu identidad rojinegra para agilizar el acceso al Jalisco y desbloquear beneficios exclusivos.</div></div><div class="max-width-full"><a href="#" class="button disable"><div>Próximamente</div></a></div></div></div></div></div></div></div></div><div id="recursos" data-nav-theme="dark" class="padding-global"><div class="section-recursos-aficion padding-section-small"><div class="full-wrapper recursrsos-aficionados"><div class="vertical-text-container"><div class="title-style-1">Recursos para el Aficionado</div><p class="grey">Información esencial para tu visita al estadio y convivencia.</p></div><div class="container-flex-ver"><a href="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a7225c427de39ad57f2cb66_MANUAL_AFICIONADO_V2-WEB_V03.pdf" target="_blank" class="recursos-download-link w-inline-block"><div class="overlay"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2dbf00154c8415ce79d14f_Frame.svg" loading="lazy" width="24.020000457763672" height="28" alt="" class="icon-2"/></div><div class="text-link-container"><div class="title-style-2 black">MANUAL DE AFICIONADO</div><div class="tag-text grey">Descargar PDF</div></div></a><a href="https://www.atlasfc.com.mx/documentacion-oficial/codigo-de-conducta" target="_blank" class="recursos-download-link w-inline-block"><div class="overlay"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a2dbf01d2d7b8fbe0c83dd0_Frame-1.svg" loading="lazy" width="24.020000457763672" height="28" alt="" class="icon-2"/></div><div class="text-link-container"><div class="title-style-2 black">CÓDIGO DE CONDUCTA</div><div class="tag-text grey">Ver lineamientos CUJ</div></div></a></div></div></div></div><div id="asesores" data-nav-theme="dark" class="padding-global"><div data-figma-id="2791:2357" class="section-asesores padding-section-large"><div data-figma-id="2791:1726" class="title-container max-width-large"><div class="red-line-title-wrapper"><div class="tag-text"><span class="red">03 · En el estadio</span></div></div><div class="title-container tab-1"><h2>TU VISITA AL ESTADIO</h2></div><p class="text-style-muted">Todo lo que necesitas para llegar, entrar y disfrutar el partido con tranquilidad.</p></div><div class="title-container red-margin-right"><h4 class="heading-33">Adquiere tus boletos con nuestros asesores</h4><p class="text-style-muted">Atención personalizada para tu compra de boletos, packs y Pase Rojinegro.</p></div><div class="asesores-container w-dyn-list"><div role="list" class="asesores-grid-main w-dyn-items"><div role="listitem" class="asesor-container w-dyn-item"><div class="asesor-imagen"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e38e1580f18bbd738603_MAURICIO%20CORTE%CC%81S.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e38e1580f18bbd738603_MAURICIO%20CORTE%CC%81S-p-500.jpg 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e38e1580f18bbd738603_MAURICIO%20CORTE%CC%81S.jpg 592w" class="imagen-asesor-bg"/></div><div class="asesores-text-container"><div class="title-style-1">Mauricio Cortés</div><p class="tag-text golden">asesor oficial</p><a href="mailto:mcortes@atlasfc.mx" class="link is-icon w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a305b3012828e2ead9bbbfc_Frame.svg" loading="lazy" alt=""/><div class="tag-text">mcortes@atlasfc.mx</div></a><a href="#" class="button is-icon full-width w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ea_f568213ec6b91541098e82c327c955ef_whatsapp.svg" loading="lazy" width="13.333333015441895" height="13.333333015441895" alt="" class="icon-1x1-xsmall"/><div>33 3167 4226</div><div data-phone="33 3167 4226" class="link-whatsapp w-embed w-script"><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".link-whatsapp").forEach(function (el) {
+      const phone = el.getAttribute("data-phone");
+      if (phone) {
+        const link = el.closest("a");
+        if (link) {
+          const mensaje = encodeURIComponent("Hola, quiero información sobre boletos y membresías de Atlas FC.");
+          link.href = "https://api.whatsapp.com/send/?phone=52"
+            + phone.replace(/\s/g, "")
+            + "&text=" + mensaje
+            + "&type=phone_number&app_absent=0";
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+        }
+      }
+    });
+  });
+</script>
+<style>
+  .link-whatsapp {
+    pointer-events: all !important;
+    cursor: pointer !important;
+    position: relative;
+    z-index: 10;
+  }
+</style></div></a></div></div><div role="listitem" class="asesor-container w-dyn-item"><div class="asesor-imagen"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e18e6ee29ec4329ea136_CARLOS%20REA.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e18e6ee29ec4329ea136_CARLOS%20REA-p-500.jpg 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e18e6ee29ec4329ea136_CARLOS%20REA.jpg 592w" class="imagen-asesor-bg"/></div><div class="asesores-text-container"><div class="title-style-1">Carlos Rea</div><p class="tag-text golden">asesor oficial</p><a href="mailto:cerea@atlasfc.mx" class="link is-icon w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a305b3012828e2ead9bbbfc_Frame.svg" loading="lazy" alt=""/><div class="tag-text">cerea@atlasfc.mx</div></a><a href="#" class="button is-icon full-width w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ea_f568213ec6b91541098e82c327c955ef_whatsapp.svg" loading="lazy" width="13.333333015441895" height="13.333333015441895" alt="" class="icon-1x1-xsmall"/><div>33 1027 8940</div><div data-phone="33 1027 8940" class="link-whatsapp w-embed w-script"><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".link-whatsapp").forEach(function (el) {
+      const phone = el.getAttribute("data-phone");
+      if (phone) {
+        const link = el.closest("a");
+        if (link) {
+          const mensaje = encodeURIComponent("Hola, quiero información sobre boletos y membresías de Atlas FC.");
+          link.href = "https://api.whatsapp.com/send/?phone=52"
+            + phone.replace(/\s/g, "")
+            + "&text=" + mensaje
+            + "&type=phone_number&app_absent=0";
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+        }
+      }
+    });
+  });
+</script>
+<style>
+  .link-whatsapp {
+    pointer-events: all !important;
+    cursor: pointer !important;
+    position: relative;
+    z-index: 10;
+  }
+</style></div></a></div></div><div role="listitem" class="asesor-container w-dyn-item"><div class="asesor-imagen"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e398fdc08478eb3d563f_CE%CC%81SAR%20NAVA.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e398fdc08478eb3d563f_CE%CC%81SAR%20NAVA-p-500.jpg 500w, https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6ae0e398fdc08478eb3d563f_CE%CC%81SAR%20NAVA.jpg 592w" class="imagen-asesor-bg"/></div><div class="asesores-text-container"><div class="title-style-1">César Nava</div><p class="tag-text golden">asesor oficial</p><a href="mailto:cnava@atlasfc.mx" class="link is-icon w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a305b3012828e2ead9bbbfc_Frame.svg" loading="lazy" alt=""/><div class="tag-text">cnava@atlasfc.mx</div></a><a href="#" class="button is-icon full-width w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ea_f568213ec6b91541098e82c327c955ef_whatsapp.svg" loading="lazy" width="13.333333015441895" height="13.333333015441895" alt="" class="icon-1x1-xsmall"/><div>33 1241 6788</div><div data-phone="33 1241 6788" class="link-whatsapp w-embed w-script"><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".link-whatsapp").forEach(function (el) {
+      const phone = el.getAttribute("data-phone");
+      if (phone) {
+        const link = el.closest("a");
+        if (link) {
+          const mensaje = encodeURIComponent("Hola, quiero información sobre boletos y membresías de Atlas FC.");
+          link.href = "https://api.whatsapp.com/send/?phone=52"
+            + phone.replace(/\s/g, "")
+            + "&text=" + mensaje
+            + "&type=phone_number&app_absent=0";
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+        }
+      }
+    });
+  });
+</script>
+<style>
+  .link-whatsapp {
+    pointer-events: all !important;
+    cursor: pointer !important;
+    position: relative;
+    z-index: 10;
+  }
+</style></div></a></div></div></div></div></div></div><div data-nav-theme="dark" class="padding-global"><div data-figma-id="2791:2357" class="section-reventa padding-section-small"><div class="title-container red-margin-right"><h4>DI NO A LA REVENTA</h4><p class="text-style-muted">Evita perderte el partido por mal uso de tu boleto digital o por comprar en reventa. Tu código QR es intransferible y único.</p></div><div class="list-container"><div class="list-text-container"><div class="title-style-1 text-weight-black margin-0"><span class="red">01</span></div><div class="list-text"><div class="container-130"><div class="title-style-1">COMPRA ÚNICAMENTE EN CANALES
+OFICIALES</div></div><div class="container-130"><div class="text-style-muted">(somosrojinegros.com, taquillas del Jalisco y asesores oficiales). Consulta toda la información en www.atlasfc.com.mx</div></div></div></div><div class="list-text-container"><div class="title-style-1 text-weight-black margin-0"><span class="red">02</span></div><div class="list-text"><div class="container-130"><div class="title-style-1">CUIDA TU BOLETO DIGITAL</div></div><div class="container-130"><div class="text-style-muted">El código QR es único, no lo compartas con desconocidos.</div></div></div></div><div class="list-text-container"><div class="title-style-1 text-weight-black margin-0"><span class="red">03</span></div><div class="list-text"><div class="container-130"><div class="title-style-1">EL CÓDIGO QR DE TU BOLETO SOLO SE PUEDE UTILIZAR 1 VEZ</div></div><div class="container-130"><div class="text-style-muted">Al obtenerlo guárdalo bien en tu teléfono.</div></div></div></div><div class="list-text-container"><div class="title-style-1 text-weight-black margin-0"><span class="red">04</span></div><div class="list-text"><div class="container-130"><div class="title-style-1">NO COMPRES EN REVENTA</div></div><div class="container-130"><div class="text-style-muted">Evita perderte el partido.</div></div></div></div><div class="list-text-container"><div class="title-style-1 text-weight-black margin-0"><span class="red">05</span></div><div class="list-text"><div class="container-130"><div class="title-style-1">CADA BOLETO ESTÁ ASIGNADO A UN EMAIL</div></div><div class="container-130"><div class="text-style-muted">y puede ser rastreado. Evita problemas.</div></div></div></div></div></div></div><div id="zona" data-nav-theme="dark" class="padding-global"><div data-figma-id="2791:2357" class="section-ubica-estadio padding-section-small"><div class="title-container red-margin-right"><h4>ENCUENTRA TU ZONA</h4><p class="text-style-muted">Ubica tu puerta y entrada para que tengas la mejor experiencia. Nuestro Staff de Profe Atlas está para apoyarte en todo momento.</p></div><div class="pop-up-wrapper"><div class="pop-up-trigger"></div><div class="pop-up-trigger _2"></div></div></div></div><div id="estadio-seguro" data-nav-theme="dark" class="padding-global"><div data-figma-id="2791:2357" class="section-estadio-seguro padding-section-small"><div class="title-container red-margin-right"><h4>ESTADIO SEGURO</h4><p class="text-style-muted">Queremos que disfrutes el partido con tranquilidad desde que llegas al Jalisco.</p></div><div class="estadio-seguro-container"><div class="overlay-estadio-seguro"><div class="icon-estadio-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a307ce5a68e7fe92fdb051f_Frame.svg" loading="lazy" width="30.75" height="30" alt=""/></div><div class="title-style-3 spacing-regular">AMBIENTE FAMILIAR</div></div><div class="overlay-estadio-seguro"><div class="icon-estadio-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a307ce76242c42afb81bfee_Frame-1.svg" loading="lazy" width="24" height="30" alt=""/></div><div class="title-style-3 spacing-regular">SEGURIDAD</div></div><div class="overlay-estadio-seguro"><div class="icon-estadio-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a307ce719694c28b245daae_Frame-2.svg" loading="lazy" width="30" height="30" alt=""/></div><div class="title-style-3 spacing-regular">SERVICIOS MÉDICOS</div></div><div class="overlay-estadio-seguro"><div class="icon-estadio-container"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a307ce5b8b7ffefbd1b70da_Frame-3.svg" loading="lazy" width="30" height="27" alt=""/></div><div class="title-style-3 spacing-regular">STAFF DE APOYO</div></div></div></div></div><div data-nav-theme="dark" class="padding-global"><div data-figma-id="2791:2357" class="section-valor-rojinegro padding-section-small"><div class="valor-container"><div class="container-flex-ver valor-rojinegro"><div class="tag-text golden">valor rojinegro</div><div class="title-container"><h4>INVITADOS DE HONOR</h4><p>Contamos con una zona exclusiva para personas con discapacidad, en la cual nuestros jugadores cubren el costo de los boletos para que nuestros invitados de honor puedan asistir con un acompañante y disfrutar del partido en el Jalisco. Si deseas reservar tus lugares, comunícate a Valor Rojinegro, nuestro programa de responsabilidad social, enviando un correo a:<br/>‍</p></div></div><div class="container-flex-ver"><a href="#" class="button"><strong>fevalencias@atlasfc.mx</strong></a><div class="tag-text grey">con atención a Flor Valencia.</div></div></div></div></div><div id="preguntas" data-nav-theme="dark" class="padding-global"><div data-figma-id="2791:2357" class="section-faq padding-section-large"><div data-figma-id="2791:1726" class="title-container"><div class="red-line-title-wrapper"><div class="tag-text"><span class="red">Preguntas frecuentes</span></div></div><h2>CONOCE TU PASE ROJINEGRO</h2><div class="text-style-muted">Todo lo que necesitas saber sobre la membresía oficial del aficionado rojinegro.</div></div><div class="accordion-wrapper"><div data-w-id="e8eb2588-fe13-a723-a595-ff49f12c85d1" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">¿Para quién es?</div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">El Pase Rojinegro es la membresía oficial creada para el aficionado que quiere garantizar su lugar en el Estadio Jalisco durante toda la temporada o torneo. Es un paquete de boletos con descuento para los partidos de local del equipo, que además brinda acceso a experiencias y beneficios exclusivos que te acercan más a Atlas FC.</p></div></div><div data-w-id="7506b5cf-4ac0-c4b4-e19a-3cf18c7babf3" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">¿Qué incluye?</div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">• PRN MAX: Jersey local, todos los partidos de local (varonil, femenil, liguilla einternacionales) + evento con jugadores.<br/>• PRN Anual/Semestral: Fase regular varonil con mayor ahorro.<br/>• PRN FLEX (20): 20 boletos para usar durante un año, tú eliges los partidos.<br/><br/>Beneficios principales al ser abonado:<br/>‍<br/>• Ahorro: Mejor precio que comprándolos por separado.<br/>• Experiencias exclusivas: preventa para liguilla y partidos de alta demanda, participación en dinámicas para ganar acceso a entrenamientos, toma de decisiones del equipo, super premios y convivencias con jugadores.<br/>• Descuentos: 15% en la tienda oficial del club (ATLAS FC SHOP).</p></div></div><div data-w-id="ffd2f1d3-602e-dd5b-af5a-bd8c171e248f" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">¿Puedo transferir mi pase?</div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">El Pase Rojinegro (PRN) de Atlas FC es personal e intransferible. No obstante, podrá ser utilizado por un tercero en caso de que el titular no pueda asistir, bajo la total responsabilidad del mismo. En caso de extravío, robo o daño, Atlas FC no se hace responsable. Para continuar con el acceso, el titular deberá solicitar la reposición correspondiente a través de su asesor o directamente en la taquilla, conforme a los lineamientos vigentes.</p></div></div><div data-w-id="ecae8323-41f4-8ad0-65de-4d91e0251b53" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">¿Es digital?</div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">Se puede utilizar de manera digital o física (tarjeta).</p></div></div><div data-w-id="8aa3f419-622d-f2e4-6b12-9c498eebb0dc" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">¿Hay pagos a meses?</div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">Sí, contamos con meses sin intereses (MSI) con la mayoría de las tarjetas de crédito:<br/><br/>Pase Semestral:<br/><br/>• 3 o 6 MSI<br/><br/>Pase Anual:<br/><br/>• 3, 6 y hasta 12 MSI<br/><br/>Si no se cuenta con tarjeta de crédito, existe el Método Paguitos, un plan de financiamiento directo con el club. Permite adquirir el abono sin tarjeta mediante un enganche y pagos mensuales. <br/><br/>¿Cómo funciona?<br/><br/>• Enganche + mensualidades: 3 pagos (pase semestral) o 5 pagos (pase anual)</p></div></div><div data-w-id="836a9261-682e-1b27-84c0-86d59ad7dd6b" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">¿Qué pasa si no puedo ir a un partido? </div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">La inasistencia a un encuentro por parte de los Abonados con Pase Rojinegro Flex o Semestral no afectará los beneficios asociados a su Pase, los cuales se mantendrán vigentes en su totalidad. <br/><br/>En el caso de los Abonados con Pase Rojinegro Anual, la falta de asistencia a un partido implicará únicamente la pérdida del beneficio correspondiente al programa “Asistencia Perfecta”, conservando de la misma manera beneficios establecidos.<br/><br/>La Asistencia Perfecta es un programa de lealtad dirigido a los Abonados que asisten a los 17 partidos de Atlas FC como local durante la fase regular del torneo, con el objetivo de reconocer y premiar su constancia, fidelidad y compromiso mediante beneficios especiales.</p></div></div><div data-w-id="61d22302-21d9-ecb3-5da9-a98481f3e763" class="accordion-item tabs-accordion"><div class="faq-trigger"><div class="title-style-2">Renovación de Pase Rojinegro</div><div class="open-close-icon-wrapper"><div class="open-close-line---brix"></div><div class="open-close-line---brix second-line---brix"></div></div></div><div style="display:none;opacity:0" class="faq-container"><p class="text-style-muted margin-0">Todos los Abonados que renueven su Pase Rojinegro por torneo o temporada reciben un beneficio especial, lo que conlleva un ahorro preferencial.</p></div></div></div></div></div><div data-zona-open="mapa" class="w-embed w-script"><!-- ═══════════════════════════════════════════════════════════════════
+     ATLAS FC · Pop-up "Mapa del Estadio Jalisco" (solo el modal)
+     Pegar el bloque completo en UN HTML Embed dentro de la página Afición.
+
+     Para ABRIR el pop-up desde tu div/imagen existente, elige una opción:
+       A. Añade el custom attribute  data-zona-open = mapa  a tu div/imagen.
+       B. Ponle un onclick:  onclick="openMapaEstadio()"
+
+     El modal ya está: mapa a la izquierda + zonas con hover a la derecha.
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<style>
+  /* Tokens del design system Atlas, embebidos para que el pop-up sea
+     autónomo (no depende de tokens.css del sitio). */
+  #zona-modal-mapa {
+    --atlas-red:        #F70004;
+    --atlas-black:      #0A0A0E;
+    --atlas-white:      #FFFFFF;
+    --atlas-gold:       #CFA754;
+    --atlas-fg-1:       rgba(255,255,255,0.90);
+    --atlas-fg-2:       rgba(255,255,255,0.70);
+    --atlas-fg-3:       rgba(255,255,255,0.60);
+    --atlas-surface-2:  rgba(255,255,255,0.10);
+    --atlas-surface-3:  rgba(255,255,255,0.15);
+    --font-display-alt: "Bebas Neue","Anton","Impact",sans-serif;
+    --font-sub:         "Saira Condensed","Bebas Neue",sans-serif;
+    --font-body:        "Inter",system-ui,sans-serif;
+    --font-mono:        "JetBrains Mono","IBM Plex Mono",ui-monospace,monospace;
+    --r-lg:   8px;
+    --r-pill: 9999px;
+    --ease-snap: cubic-bezier(0.2,0.8,0.2,1);
+    --dur-state: 200ms;
+  }
+  #zona-modal-mapa * { box-sizing: border-box; }
+
+  /* ── Modal pantalla completa ───────────────────────────────── */
+  #zona-modal-mapa {
+    position: fixed; inset: 0; z-index: 100000; background: var(--atlas-black);
+    display: none; flex-direction: column;
+  }
+  #zona-modal-mapa.is-open { display: flex; }
+  #zona-modal-mapa .zona-modal__bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 16px clamp(16px, 4vw, 48px); border-bottom: 1px solid var(--atlas-surface-2); flex-shrink: 0;
+  }
+  #zona-modal-mapa .zona-modal__title {
+    font-family: var(--font-display-alt); font-weight: 400; font-size: clamp(22px, 2.6vw, 34px);
+    letter-spacing: 0.4px; text-transform: uppercase; color: var(--atlas-white); margin: 0;
+  }
+  #zona-modal-mapa .zona-modal__close {
+    flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid var(--atlas-surface-3); background: transparent; color: var(--atlas-white);
+    cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+    transition: background var(--dur-state) var(--ease-snap), border-color var(--dur-state) var(--ease-snap);
+  }
+  #zona-modal-mapa .zona-modal__close svg { width: 20px; height: 20px; }
+  #zona-modal-mapa .zona-modal__close:hover { background: var(--atlas-red); border-color: var(--atlas-red); }
+  #zona-modal-mapa .zona-modal__body {
+    flex: 1; overflow-y: auto; display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    gap: clamp(24px, 3vw, 56px); padding: clamp(20px, 3vw, 48px) clamp(16px, 4vw, 48px); align-items: start;
+  }
+  #zona-modal-mapa .zona-modal__map { display: flex; align-items: flex-start; justify-content: center; position: sticky; top: 0; }
+  #zona-modal-mapa .zona-modal__map img { width: 100%; height: auto; max-width: 720px; display: block; }
+
+  #zona-modal-mapa .zona-legend { display: flex; flex-direction: column; gap: clamp(28px, 3vw, 40px); }
+  #zona-modal-mapa .zona-legend__title {
+    font-family: var(--font-mono); font-weight: 800; font-size: 11px; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--atlas-gold); margin: 0 0 16px;
+  }
+  #zona-modal-mapa .zona-legend__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  #zona-modal-mapa .zlg {
+    display: flex; align-items: center; gap: 12px; padding: 9px 16px;
+    border: 1px solid var(--atlas-surface-3); border-radius: var(--r-pill);
+    font-family: var(--font-sub); font-weight: 700; font-size: 13px; letter-spacing: 0.6px;
+    text-transform: uppercase; color: var(--atlas-white);
+    transition: border-color var(--dur-state) var(--ease-snap), background var(--dur-state) var(--ease-snap);
+  }
+  #zona-modal-mapa .zlg:hover { border-color: var(--atlas-fg-3); background: rgba(255,255,255,0.03); }
+  #zona-modal-mapa .zlg__dot { width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0; }
+  #zona-modal-mapa .zona-legend__icons { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  #zona-modal-mapa .zsv-item { display: flex; align-items: center; gap: 13px; font-family: var(--font-body); font-size: 14px; color: var(--atlas-fg-1); }
+  #zona-modal-mapa .zsv { width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; flex-shrink: 0; }
+  #zona-modal-mapa .zsv svg { width: 22px; height: 22px; }
+  #zona-modal-mapa .zsv--triangle { background: transparent; }
+  #zona-modal-mapa .zsv--triangle svg { width: 26px; height: 26px; }
+  #zona-modal-mapa .zona-legend__cuj { display: flex; align-items: center; gap: 14px; margin-top: 20px; }
+  #zona-modal-mapa .zona-legend__badges { display: inline-flex; gap: 6px; flex-shrink: 0; }
+  #zona-modal-mapa .zcuj-badge {
+    display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+    border-radius: 50%; background: #F4C82E; color: #1A1A1E;
+    font-family: var(--font-sub); font-weight: 700; font-size: 12px; letter-spacing: 0.5px;
+  }
+  #zona-modal-mapa .zona-legend__cuj-text { font-family: var(--font-body); font-size: 13px; line-height: 1.5; color: var(--atlas-fg-2); }
+
+  @media (max-width: 900px) {
+    #zona-modal-mapa .zona-modal__body { grid-template-columns: 1fr; padding-top: 0; }
+    #zona-modal-mapa .zona-modal__map {
+      position: sticky; top: 0; z-index: 2; background: var(--atlas-black);
+      padding: 0 0 14px; margin-bottom: 14px; border-bottom: 1px solid var(--atlas-surface-2);
+    }
+    #zona-modal-mapa .zona-modal__map img { max-width: 520px; margin: 0 auto; }
+  }
+</style>
+
+<!-- ══════════ MODAL ══════════ -->
+<div class="zona-modal" id="zona-modal-mapa" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mapa del Estadio Jalisco">
+  <div class="zona-modal__bar">
+    <span class="zona-modal__title">Mapa del Estadio Jalisco</span>
+    <button class="zona-modal__close" type="button" data-zona-close aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="zona-modal__body">
+    <div class="zona-modal__map">
+      <img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6ae0f6374c3522af60185444_mapa-estadio-jalisco-1.webp"
+           alt="Mapa del Estadio Jalisco con zonas, accesos y servicios">
+    </div>
+    <aside class="zona-legend">
+      <div class="zona-legend__group">
+        <h4 class="zona-legend__title">Zonas</h4>
+        <ul class="zona-legend__list">
+          <li class="zlg"><span class="zlg__dot" style="background:#2A6FDB"></span>VIP Total Play</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#B89B71"></span>San Matías Premier</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#E8822A"></span>Poniente Central</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#54B23A"></span>Lateral Poniente</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#E2231A"></span>Lateral Oriente</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#6E4FC4"></span>A Cabecera Sur Familiar</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#29A3DA"></span>Corner</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#B14FC0"></span>A Cabecera Norte</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#1E7C82"></span>B Poniente General</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#1E7A45"></span>B Oriente General</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#8A3FB0"></span>C Norte General</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#1A1A1E;border:1px solid var(--atlas-surface-3)"></span>GA Norte</li>
+          <li class="zlg"><span class="zlg__dot" style="background:#E0506B"></span>C Sur General</li>
+        </ul>
+      </div>
+      <div class="zona-legend__group">
+        <h4 class="zona-legend__title">Servicios y accesos</h4>
+        <ul class="zona-legend__icons">
+          <li class="zsv-item"><span class="zsv" style="background:#E2231A"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l1.5-4.5A2 2 0 018.4 7h7.2a2 2 0 011.9 1.5L19 13v5h-2v-2H7v2H5v-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="8" cy="15" r="1" fill="currentColor"/><circle cx="16" cy="15" r="1" fill="currentColor"/></svg></span>Estacionamiento Estadio Jalisco</li>
+          <li class="zsv-item"><span class="zsv" style="background:#2A6FDB"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="5" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 11h14" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="18" r="1.4" fill="currentColor"/><circle cx="16" cy="18" r="1.4" fill="currentColor"/></svg></span>Macrobús</li>
+          <li class="zsv-item"><span class="zsv" style="background:#E8822A"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13a8 8 0 0116 0z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 13h18v2a1 1 0 01-1 1H4a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>Lonches “El Pesebre”</li>
+          <li class="zsv-item"><span class="zsv" style="background:#2A6FDB"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 14a8 8 0 0116 0z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 14c1-1.5 2.4-2 4-2s3 .5 4 2" stroke="currentColor" stroke-width="1.5"/></svg></span>Tacos “La Vaca”</li>
+          <li class="zsv-item"><span class="zsv zsv--triangle" style="color:#C0379B"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6h16l-8 12z"/></svg></span>Tiendas Oficiales · Atlas FC Shop</li>
+        </ul>
+        <div class="zona-legend__cuj">
+          <span class="zona-legend__badges"><span class="zcuj-badge">S 03</span><span class="zcuj-badge">S 25</span></span>
+          <span class="zona-legend__cuj-text">Malla de ingreso exclusiva para tarjetahabientes de CUJ.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var modal = document.getElementById('zona-modal-mapa');
+    if (!modal || modal.dataset.bound) return;
+    modal.dataset.bound = '1';
+
+    // Reubica el modal como hijo directo de <body>. Así escapa de cualquier
+    // contenedor oculto (display:none) o con transform en el que se haya
+    // pegado el embed — el overlay fixed siempre cubrirá la pantalla.
+    if (modal.parentElement !== document.body) {
+      document.body.appendChild(modal);
+    }
+
+    function open() {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Expuesto para que cualquier elemento de Webflow pueda abrirlo:
+    //   onclick="openMapaEstadio()"  o  un botón con data-zona-open="mapa"
+    window.openMapaEstadio = open;
+    window.closeMapaEstadio = close;
+
+    // Delegación de clicks. Abre el modal cuando se hace click en:
+    //   · cualquier elemento con  data-zona-open="mapa"
+    //   · el banner del mapa de esta página  (.pop-up-trigger, SIN la combo _2)
+    //     — el ._2 es el de Código de Conducta y NO se toca.
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('[data-zona-open="mapa"], .pop-up-trigger:not(._2)')) {
+        e.preventDefault(); open(); return;
+      }
+      if (e.target.closest('[data-zona-close]')) { close(); }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+    });
+  })();
+</script>
+</div><div data-zona-open="mapa" class="w-embed w-script"><!-- ═══════════════════════════════════════════════════════════════════
+     ATLAS FC · Pop-up "Código de Conducta"
+     Lista con el MISMO estilo de tarjetas que "DI NO A LA REVENTA"
+     (.list-container / .list-text-container / .list-text / .container-130)
+     + iconos SVG. Reutiliza las clases del sitio, así hereda los bordes y
+     la rejilla automáticamente en la página.
+
+     Pegar el bloque completo en UN HTML Embed en la página Afición.
+     Se auto-conecta al banner .pop-up-trigger._2. También:
+       · custom attribute  data-zona-open = codigo
+       · onclick="openCodigoConducta()"
+
+     IMPORTANTE: elimina el pop-up viejo con la imagen (.pop-up _2) y su
+     interacción de Webflow sobre .pop-up-trigger._2 para que no se abran dos.
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<style>
+  #zona-modal-codigo {
+    --atlas-red:        #F70004;
+    --atlas-black:      #0A0A0E;
+    --atlas-white:      #FFFFFF;
+    --atlas-fg-1:       rgba(255,255,255,0.90);
+    --atlas-fg-2:       rgba(255,255,255,0.70);
+    --atlas-fg-3:       rgba(255,255,255,0.60);
+    --atlas-surface-2:  rgba(255,255,255,0.10);
+    --atlas-surface-3:  rgba(255,255,255,0.15);
+    --font-display:     "Anton","Bebas Neue","Impact",sans-serif;
+    --font-display-alt: "Bebas Neue","Anton","Impact",sans-serif;
+    --font-sub:         "Saira Condensed","Bebas Neue",sans-serif;
+    --font-body:        "Inter",system-ui,sans-serif;
+    --dur-state: 200ms;
+    --ease-snap: cubic-bezier(0.2,0.8,0.2,1);
+  }
+  #zona-modal-codigo * { box-sizing: border-box; }
+
+  /* ── Chrome del modal (barra + cerrar) ─────────────────────── */
+  #zona-modal-codigo {
+    position: fixed; inset: 0; z-index: 100000; background: var(--atlas-black);
+    display: none; flex-direction: column;
+  }
+  #zona-modal-codigo.is-open { display: flex; }
+  #zona-modal-codigo .zona-modal__bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 16px clamp(16px, 4vw, 48px); border-bottom: 1px solid var(--atlas-surface-2); flex-shrink: 0;
+  }
+  #zona-modal-codigo .zona-modal__title {
+    font-family: var(--font-display-alt); font-weight: 400; font-size: clamp(22px, 2.6vw, 34px);
+    letter-spacing: 0.4px; text-transform: uppercase; color: var(--atlas-white); margin: 0;
+  }
+  #zona-modal-codigo .zona-modal__close {
+    flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid var(--atlas-surface-3); background: transparent; color: var(--atlas-white);
+    cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+    transition: background var(--dur-state) var(--ease-snap), border-color var(--dur-state) var(--ease-snap);
+  }
+  #zona-modal-codigo .zona-modal__close svg { width: 20px; height: 20px; }
+  #zona-modal-codigo .zona-modal__close:hover { background: var(--atlas-red); border-color: var(--atlas-red); }
+  #zona-modal-codigo .zona-modal__body {
+    flex: 1; overflow-y: auto; display: block;
+    padding: clamp(20px, 3vw, 48px) clamp(16px, 4vw, 48px);
+  }
+
+  /* ── Encabezado (título + intro) ───────────────────────────── */
+  #zona-modal-codigo .codigo { max-width: 1200px; margin: 0 auto; }
+  #zona-modal-codigo .codigo__title {
+    font-family: var(--font-display); font-weight: 400; font-size: clamp(30px, 4vw, 52px);
+    line-height: 0.95; letter-spacing: 0.4px; text-transform: uppercase; color: var(--atlas-white);
+    border-left: 4px solid var(--atlas-red); padding-left: 16px; margin: 0 0 16px;
+  }
+  #zona-modal-codigo .codigo__lead { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--atlas-fg-2); margin: 0; max-width: 720px; }
+  #zona-modal-codigo .codigo__foot { font-family: var(--font-body); font-size: 12px; line-height: 1.5; color: var(--atlas-fg-3); margin: 20px 0 0; }
+
+  /* ── Icono de cada regla (marcador izquierdo de la tarjeta) ── */
+  #zona-modal-codigo .codigo-rule__icon {
+    position: relative; flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%;
+    border: 2px solid var(--atlas-red); display: inline-flex; align-items: center; justify-content: center; color: var(--atlas-white);
+  }
+  #zona-modal-codigo .codigo-rule__icon svg { width: 22px; height: 22px; }
+  #zona-modal-codigo .codigo-rule__icon--text { font-family: var(--font-sub); font-weight: 700; font-size: 17px; color: var(--atlas-white); }
+  #zona-modal-codigo .codigo-rule__icon--no::after {
+    content: ""; position: absolute; left: 50%; top: 5px; bottom: 5px; width: 2px;
+    background: var(--atlas-red); transform: translateX(-50%) rotate(-45deg);
+  }
+
+  /* La rejilla/bordes de .list-container, .list-text-container, .list-text y
+     .container-130 los aporta el CSS del sitio (mismo look que la reventa). */
+  /* Centrar verticalmente icono + texto dentro de cada tarjeta. */
+  #zona-modal-codigo .list-text-container { align-items: center; }
+</style>
+
+<!-- ══════════ MODAL ══════════ -->
+<div class="zona-modal" id="zona-modal-codigo" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Código de Conducta">
+  <div class="zona-modal__bar">
+    <span class="zona-modal__title">Código de Conducta</span>
+    <button class="zona-modal__close" type="button" data-zona-close aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="zona-modal__body">
+    <div class="codigo">
+      <div class="codigo__intro">
+        <h3 class="codigo__title">Código<br>de conducta</h3>
+        <p class="codigo__lead">Como aficionado/a al fútbol, entiendo que la apertura de estadios implica el compromiso de todos para cumplir las normas y protocolos que procuren la salud y seguridad de todos, por tal motivo me comprometo a:</p>
+      </div>
+
+      <div class="list-container">
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 3h4v3l1 2v11a1 1 0 01-1 1h-4a1 1 0 01-1-1V8l1-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No entrar bajo los efectos de ninguna droga o alcohol.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--text">+3</span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No ingresar con niños menores de 3 años.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 9h10l-1 11H8z M7 9l-.5-3h13L18 9" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No ingresar con alimentos ni bebidas.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8h10l1 12H6z M9 8a3 3 0 016 0" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No llevar bolsas ni mochilas y permitir una revisión de mis pertenencias.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11v3l10 4V7z M16 10a3 3 0 010 5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No ingresar ningún tipo de artículo de animación señalado por la Liga MX.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c2 3 5 4 5 8a5 5 0 01-10 0c0-2 1-3 2-4 .5 2 1.5 2 1.5 2 0-2 1-4 1.5-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No ingresar con objetos prohibidos por la Liga MX, como: artefactos de pirotecnia, armas, encendedores, cigarros, maquillaje, etc.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 6h14v9H9l-4 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No participar en el grito homofóbico.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13h13v3H4z M20 11v5M17 13h3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No fumar en ninguna zona del estadio, de acuerdo con el Reglamento de la Ley General para el control del Tabaco.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 5v7h10V5 M5 12h14v4 M8 16v3 M16 16v3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">Ocupar únicamente el asiento indicado en mi boleto. Recuerda que todos los lugares son numerados.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon codigo-rule__icon--no"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">No arrojar objetos a la cancha o en tribuna.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 21l1-7 2-1 2 1 1 7M10 13l-2 3M14 13l2 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">Permanecer sentado observando el partido para no obstruir la visibilidad de otros asistentes ni el tránsito por los pasillos.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.5-7-9a4 4 0 017-2.6A4 4 0 0119 11c0 4.5-7 9-7 9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">Respetar las medidas vigentes del Estado de Jalisco en materia de salud.</div></div></div>
+        </div>
+        <div class="list-text-container">
+          <span class="codigo-rule__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="11" r="1.6" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 15c.5-1.2 1.5-1.8 2.5-1.8s2 .6 2.5 1.8M14 10h4M14 13h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <div class="list-text"><div class="container-130"><div class="text-style-muted">Para aficionados mayores de edad, es indispensable presentar Fan ID para poder ingresar al Estadio Jalisco. Genéralo en fanliga.mx</div></div></div>
+        </div>
+      </div>
+
+      <p class="codigo__foot">*En caso de no cumplir alguno de los puntos mencionados, se me negará el acceso al Estadio Jalisco, o bien, podré ser removido de las instalaciones.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var modal = document.getElementById('zona-modal-codigo');
+    if (!modal || modal.dataset.bound) return;
+    modal.dataset.bound = '1';
+
+    if (modal.parentElement !== document.body) document.body.appendChild(modal);
+
+    function open() {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    window.openCodigoConducta = open;
+    window.closeCodigoConducta = close;
+
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('[data-zona-open="codigo"], .pop-up-trigger._2')) {
+        e.preventDefault(); e.stopPropagation(); open(); return;
+      }
+      if (e.target.closest('#zona-modal-codigo [data-zona-close]')) { close(); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+    });
+  })();
+</script>
+</div></div></div><div data-wf--footer--variant="base" class="footer-container"><div data-nav-theme="dark" class="padding-global"><div class="section-newsletter"><div data-figma-id="2791:1726" class="title-container"><div class="red-line-title-wrapper"><div class="tag-text"><span class="red">Únete a la Fiel</span></div></div><h2><span>RECIBE LAS NOTICIAS ANTES QUE NADIE</span></h2><p class="text-style-muted">Crónicas, entrevistas y novedades del universo rojinegro directo en tu correo.</p></div><a href="/unete-a-la-fiel" class="unimerle-fiel w-inline-block"><div>unirme a la fiel</div></a></div></div><div class="footer"><div class="footer-container-main"><div class="footer-social-media-container"><img width="70" height="80" alt="" src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec379_Group-48095521.svg" loading="lazy" class="atlas-footer-image"/><div class="social-link-container-main varonil"><div class="social-links"><a href="https://www.facebook.com/AtlasFC" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3e8_862b7e7f1250f1c44cd426fada94b49d_facebook.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://x.com/atlasfc" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ec_ccc2ec99e805f906b029717e31fc24ce_x.svg" loading="lazy" width="Auto" alt="" class="laredsocial"/></a><a href="https://www.instagram.com/atlasfc" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ed_72291bf88f56250c061b9baf809aecd9_instagram.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://www.tiktok.com/@atlasfc?is_from_webapp=1&amp;sender_device=pc" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3e9_a837137d339051b6967d14605a1cfb26_tiktok.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://www.youtube.com/@atlasfc" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3eb_f10b82aa0468718eaf58da43c62ebce0_youtube.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://discord.com/invite/atlasfc" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ee_96d7c8420934e6701970052a3d7e57a8_discord.svg" loading="lazy" alt="" class="laredsocial"/></a></div><div class="title-style-3 light">ATLAS FC</div></div><div class="social-link-container-main femenil"><div class="social-links"><a href="https://www.facebook.com/atlasfcfemenil" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3e8_862b7e7f1250f1c44cd426fada94b49d_facebook.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://twitter.com/AtlasFCFemenil" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ec_ccc2ec99e805f906b029717e31fc24ce_x.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://instagram.com/atlasfcfemenil" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ed_72291bf88f56250c061b9baf809aecd9_instagram.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://www.tiktok.com/@atlasfcfemenil?_t=8VKDI3TxNP4&amp;_r=1" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3e9_a837137d339051b6967d14605a1cfb26_tiktok.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://youtube.com/c/atlasfc" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3eb_f10b82aa0468718eaf58da43c62ebce0_youtube.svg" loading="lazy" alt="" class="laredsocial"/></a></div><div class="title-style-3 light">ATLAS FEMENIL</div></div><div class="social-link-container-main"><div class="social-links"><a href="https://www.facebook.com/ProfeAtlas" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3e8_862b7e7f1250f1c44cd426fada94b49d_facebook.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://twitter.com/ProfeAtlas" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ec_ccc2ec99e805f906b029717e31fc24ce_x.svg" loading="lazy" alt="" class="laredsocial"/></a><a href="https://api.whatsapp.com/send/?phone=5213323384240&amp;text=%C2%A1Hola+Profe+Atlas%21&amp;type=phone_number&amp;app_absent=0" target="_blank" class="social-link-block w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/69fcf3ea92d2cdb9abbec3ea_f568213ec6b91541098e82c327c955ef_whatsapp.svg" loading="lazy" alt="" class="laredsocial"/></a></div><div class="title-style-3 light">PROFE ATLAS</div></div></div><a href="https://online.caliente.mx/page?member=atlas&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=54300998&amp;lp=57942151&amp;var1=footerweb" class="w-inline-block"><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a3d861754134849e8b7872a_caliente.mx_.svg" loading="lazy" alt="" class="caliente-footer"/></a></div><div class="footer-container-second"><div class="footer-legal-container"><div class="menu-footer"><p class="title-style-3">EQUIPOS</p><a href="/" class="link w-inline-block"><div class="captions lower-case">Varonil</div></a><a href="/home-femenil" class="link w-inline-block"><div class="captions lower-case">Femenil</div></a></div><div class="menu-footer"><p class="title-style-3">AFICIÓN</p><a href="https://cloud.atlasrojinegro.com/experiencias-rojinegras" class="link w-inline-block"><div class="captions lower-case">Atlas Kids</div></a><a href="https://www.atlasfc.com.mx/aficion#recursos" class="link w-inline-block"><div class="captions lower-case"> Manual del aficionado</div></a></div><div class="menu-footer"><p class="title-style-3">BOLETOS</p><a href="https://www.atlasfc.com.mx/aficion#zona" class="link w-inline-block"><div class="captions lower-case">Encuentra tu zona</div></a><a href="https://www.atlasfc.com.mx/aficion#asesores" class="link w-inline-block"><div class="captions lower-case">Asesores</div></a><a href="https://www.atlasfc.com.mx/aficion#preguntas" class="link w-inline-block"><div class="captions lower-case">Preguntas Frecuentes</div></a></div><div class="menu-footer"><p class="title-style-3">TIENDA</p><a href="https://shop.atlasfc.com.mx/collections/jersey-1" class="link w-inline-block"><div class="captions lower-case">Jersey</div></a><a href="https://shop.atlasfc.com.mx/collections/los-mas-vendidos" class="link w-inline-block"><div class="captions lower-case">Catálogo</div></a><a href="https://shop.atlasfc.com.mx/collections/novedades-1" class="link w-inline-block"><div class="captions lower-case">Novedades</div></a></div><div class="menu-footer"><p class="title-style-3">AYUDA</p><a href="https://www.atlasfc.com.mx/documentacion-oficial/politicas-de-privacidad" target="_blank" class="link w-inline-block"><div class="captions lower-case">Polìticas de privacidad</div></a><a href="https://www.atlasfc.com.mx/documentacion-oficial/terminos-y-condiciones" target="_blank" class="link w-inline-block"><div class="captions lower-case">Términos y condiciones</div></a></div></div></div><div class="footer-container-third"><div class="container-flex-ver"><div class="body-small text-style-muted">© 2026 Atlas FC. Todos los derechos reservados.</div><div class="body-small text-style-muted">Powered by Nuclea Studio</div></div><img src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a3d8617e4521f2986a3be4f_Prodi.avif" loading="lazy" alt="Atlas FC — Prodi" class="prodi"/></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69fcf3ea92d2cdb9abbec2bb" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/js/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/js/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.schunk.a626aae79b30e707.js" type="text/javascript" integrity="sha384-E6AsrZt/IiirXbWo40Z/mzQr/JBoSq37xdsFZ/G844sTNwqxA8QrF5gXOcMOKyfw" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/js/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.schunk.121b0d7ff03e0f4a.js" type="text/javascript" integrity="sha384-xmxYNW5cjPqRkOstIN2AtIcrlQOgIF4k5PmI7WPxkrTXkUGtbSKaezRTaxUTpIEs" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/js/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.0e91b1db.1cbfb667d408ce38.js" type="text/javascript" integrity="sha384-vLGs92LZodHJ4z9w+SnhHPfOSAKG+QCGLBxHRcg609X70nFewmYwOz73lfTR3bHa" crossorigin="anonymous"></script><script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('.sub-menu-link');
+    if (!link) return;
+    var openBtn = document.querySelector('.nav-section .w-nav-button.w--open');
+    if (openBtn) openBtn.click();
+  });
+</script>
+
+<style>
+/* ===== FIX: hover rojo en título del menú (todos los casos) ===== */
+.title-menu.w-nav-link.w--current:hover,
+.title-menu.w-nav-link.w--current:lang(es-mx):hover {
+  color: var(--_colors---rojo-furia) !important;
+}
+.title-menu:hover,
+.title-menu:lang(es-mx):hover {
+  color: var(--_colors---rojo-furia) !important;
+}
+
+/* Página actual — quita el azul/blanco de Webflow */
+.title-menu.w-nav-link.w--current {
+  color: #A0A0A0 !important;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  var nav = document.querySelector('.nav-section');
+  if (!nav) return;
+
+  var sections = document.querySelectorAll('[data-nav-theme]');
+  var navHeight = nav.offsetHeight;
+
+  function updateNavTheme() {
+    var line = navHeight / 2; // punto medio del nav como referencia
+    var current = null;
+
+    sections.forEach(function (section) {
+      var rect = section.getBoundingClientRect();
+      if (rect.top <= line && rect.bottom > line) {
+        current = section.getAttribute('data-nav-theme');
+      }
+    });
+
+    if (current === 'light') {
+      nav.classList.add('nav--on-light');
+    } else {
+      nav.classList.remove('nav--on-light');
+    }
+  }
+
+  window.addEventListener('scroll', updateNavTheme, { passive: true });
+  window.addEventListener('load', updateNavTheme);
+  updateNavTheme();
+
+});
+</script>
+
+
+
+
+<script>
+(function () {
+  var mq   = window.matchMedia('(max-width: 767px)');
+  var ctas = document.querySelector('.button-group.navbar.mobile');
+  if (!ctas) return;
+
+  var lastY     = window.scrollY;
+  var threshold = 8;   // ignora micro-scrolls
+  var revealAt  = 80;  // arriba del todo siempre visibles
+  var ticking   = false;
+
+  function update() {
+    if (!mq.matches) {                 // solo mobile
+      ctas.classList.remove('cta-hidden');
+      ticking = false;
+      return;
+    }
+    var y = window.scrollY;
+    if (Math.abs(y - lastY) > threshold) {
+      if (y > lastY && y > revealAt) {
+        ctas.classList.add('cta-hidden');     // scroll abajo → ocultar
+      } else {
+        ctas.classList.remove('cta-hidden');  // scroll arriba → mostrar
+      }
+      lastY = y;
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+})();
+</script>
+
+<script>
+(function () {
+  // Clases de los popups que deben bloquear el scroll de fondo.
+  // .pop-up ya cubre también .pop-up._2 (comparten la clase base).
+  // Agrega aquí la clase del calendario de varonil cuando la tengas, p.ej:
+  // var SELECTOR = '.pop-up, .pop-up-calendario';
+  var SELECTOR = '.pop-up';
+
+  var popups = Array.prototype.slice.call(document.querySelectorAll(SELECTOR));
+  if (!popups.length) return;
+
+  function anyOpen() {
+    return popups.some(function (el) {
+      return getComputedStyle(el).display !== 'none';
+    });
+  }
+  function sync() {
+    document.documentElement.classList.toggle('popup-open', anyOpen());
+  }
+
+  var obs = new MutationObserver(sync);
+  popups.forEach(function (el) {
+    obs.observe(el, { attributes: true, attributeFilter: ['style', 'class'] });
+  });
+  sync();
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a.button.abreotra').forEach(function (a) {
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+});
+</script>
+
+
+
+
+<script>
+(function () {
+  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbyRqcdDONRMvaR6WpZXgLQzX_tl3u1-ewoZrB2qrz0WmBsi18jsh7BcD7zbyVv2lcFF/exec';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('email-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var payload = {
+        nombre:   form.querySelector('[name="NOMBRE"]').value.trim(),
+        apellido: form.querySelector('[name="APELLIDO"]').value.trim(),
+        telefono: form.querySelector('[name="TELEFONO"]').value.trim(),
+        correo:   form.querySelector('[name="CORREO"]').value.trim()
+      };
+
+      fetch(SHEET_URL, {
+        method: 'POST',
+        body: JSON.stringify(payload)
+      })
+      .then(function () {
+        form.reset();
+        var success = form.querySelector('.w-form-done');
+        if (success) success.style.display = 'block';
+      })
+      .catch(function (err) {
+        console.error('Error al enviar:', err);
+        var fail = form.querySelector('.w-form-fail');
+        if (fail) fail.style.display = 'block';
+      });
+    });
+  });
+})();
+</script>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+// ── Eventos Mobile Swiper ─────────────────────────────────────────
+window.Webflow = window.Webflow || [];
+window.Webflow.push(function () {
+  const eventosEl = document.querySelector('.swiper-eventos-mobile');
+  if (eventosEl) {
+    const eventosSlides = eventosEl.querySelectorAll('.swiper-slide');
+    if (eventosSlides.length > 0) {
+      new Swiper('.swiper-eventos-mobile', {
+        slidesPerView: eventosSlides.length === 1 ? 1 : 1.15,
+        spaceBetween: 16,
+        loop: false,
+        grabCursor: true,
+        navigation: false,
+        pagination: eventosSlides.length > 1
+          ? { el: '.swiper-eventos-mobile .swiper-pagination', clickable: true }
+          : false,
+        breakpoints: {
+          768: { slidesPerView: Math.min(eventosSlides.length, 3), spaceBetween: 24 }
+        }
+      });
+    }
+  }
+});
+
+// ── Atlas FC — Ticker de partidos (Swiper · mismo estilo que el home) ──
+// Rellena .swiper-matches > .swiper-wrapper e inicializa su propio Swiper.
+// Reemplaza al antiguo atl-tick.
+(function () {
+  'use strict';
+
+  var BASE     = 'https://webws.365scores.com/web/';
+  var ATLAS_ID = 1258;
+  var COMP     = 141;
+  var QS       = 'appTypeId=5&langId=29&timezoneName=America%2FMexico_City&userCountryId=31';
+
+  var ABBR = {
+    'Atlas': 'ATLAS',
+    'Chivas de Guadalajara': 'GDL',
+    'Cruz Azul': 'CRUZ AZUL',
+    'Club América': 'AMÉRIC',
+    'Tigres UANL': 'TIGRES',
+    'Pumas UNAM': 'PUMAS',
+    'Toluca': 'TOLUCA',
+    'Pachuca': 'PACHUCA',
+    'Santos Laguna': 'SANTOS',
+    'León': 'LEÓN',
+    'Mazatlán FC': 'MAZATLÁN',
+    'Atlético San Luis': 'SAN LUIS',
+    'Monterrey': 'MONTREY',
+    'Necaxa': 'NECAXA',
+    'Querétaro FC': 'QUERÉTARO',
+    'Puebla': 'PUEBLA',
+    'FC Juárez': 'JUÁREZ',
+    'Club Tijuana': 'TIJUANA',
+  };
+
+  var liveInterval = null;
+
+  var CHEVRON =
+    '<svg viewBox="0 0 14 14" fill="none" aria-hidden="true">' +
+    '<path d="M4.8125 11.8125C4.70061 11.8125 4.58861 11.7697 4.50318 11.6843C4.33223 11.5133 4.33223 11.2365 4.50318 11.0657L8.56887 6.99999L4.50318 2.9343C4.33223 2.76335 4.33223 2.48652 4.50318 2.31567C4.67414 2.14483 4.95097 2.14472 5.12181 2.31567L9.49681 6.69067C9.66776 6.86163 9.66776 7.13846 9.49681 7.3093L5.12181 11.6843C5.03639 11.7697 4.92439 11.8125 4.8125 11.8125Z" fill="currentColor"></path>' +
+    '</svg>';
+
+  function ensureControls(el) {
+    if (!el.querySelector('.swiper-button-prev')) {
+      var prev = document.createElement('div');
+      prev.className = 'swiper-button-prev';
+      prev.innerHTML = CHEVRON;
+      el.appendChild(prev);
+    }
+    if (!el.querySelector('.swiper-button-next')) {
+      var next = document.createElement('div');
+      next.className = 'swiper-button-next';
+      next.innerHTML = CHEVRON;
+      el.appendChild(next);
+    }
+  }
+
+  function abbr(name) {
+    return ABBR[name] || name.toUpperCase().slice(0, 8);
+  }
+
+  function roundLabel(g) {
+    if (g.roundNum != null) return 'J' + g.roundNum;
+    var s   = (g.stageName || '').toLowerCase();
+    var leg = g._leg === 2 ? 'VUELTA' : 'IDA';
+    if (s.indexOf('cuartos') !== -1) return 'CUARTOS · ' + leg;
+    if (s.indexOf('semi')    !== -1) return 'SEMIS · '   + leg;
+    if (s.indexOf('final')   !== -1) return 'FINAL · '   + leg;
+    return (g.stageName || '').toUpperCase();
+  }
+
+  function assignLegs(games) {
+    var count = {};
+    return games.map(function (g) {
+      if (g.roundNum == null && g.stageName) {
+        count[g.stageName] = (count[g.stageName] || 0) + 1;
+        return Object.assign({}, g, { _leg: count[g.stageName] });
+      }
+      return g;
+    });
+  }
+
+  function isAtlas(g) {
+    return (g.homeCompetitor && g.homeCompetitor.id === ATLAS_ID) ||
+           (g.awayCompetitor && g.awayCompetitor.id === ATLAS_ID);
+  }
+
+  function notApertura(g) {
+    return (g.stageName || '').toLowerCase().indexOf('apertura') === -1;
+  }
+
+  function renderSlide(g, isCurrent) {
+    var h    = g.homeCompetitor;
+    var a    = g.awayCompetitor;
+    var done = g.statusGroup === 4;
+    var live = g.statusGroup === 3;
+
+    var scoreStr = (done || live)
+      ? (h.score || 0) + '-' + (a.score || 0)
+      : 'VS';
+
+    var badgeHtml = '';
+    if (live) {
+      badgeHtml =
+        '<div class="tag is-alternate is-live">' +
+          '<p class="body-small">' + (g.shortStatusText || 'EN VIVO') + '</p>' +
+        '</div>';
+    } else if (isCurrent && !done) {
+      badgeHtml =
+        '<div class="tag is-alternate">' +
+          '<p class="body-small">próximo</p>' +
+        '</div>';
+    }
+
+    var containerClass = isCurrent
+      ? 'vertical-match-container-current'
+      : 'vertical-match-container';
+
+    return (
+      '<div class="swiper-slide match">' +
+        '<div class="' + containerClass + '">' +
+          '<p class="tag-text absolute grey">' + roundLabel(g) + '</p>' +
+          '<div class="chip-container">' +
+            '<p class="pretitle">' + abbr(h.name) + '</p>' +
+            '<p class="title-style-1">' + scoreStr + '</p>' +
+            '<p class="pretitle">' + abbr(a.name) + '</p>' +
+          '</div>' +
+          badgeHtml +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function fetchAll() {
+    return Promise.all([
+      fetch(BASE + 'games/results?competitions=' + COMP + '&competitors=' + ATLAS_ID + '&' + QS)
+        .then(function (r) { return r.json(); }),
+      fetch(BASE + 'games/current?competitions=' + COMP + '&' + QS)
+        .then(function (r) { return r.json(); }),
+    ]).then(function (results) {
+      var past = (results[0].games || []).filter(function (g) {
+        return isAtlas(g) && notApertura(g);
+      });
+      var seen = {};
+      past.forEach(function (g) { seen[g.id] = true; });
+      var current = (results[1].games || []).filter(function (g) {
+        return isAtlas(g) && notApertura(g) && !seen[g.id];
+      });
+      var all = past.concat(current).sort(function (a, b) {
+        return new Date(a.startTime) - new Date(b.startTime);
+      });
+      return assignLegs(all);
+    });
+  }
+
+  function render() {
+    var swiperEl = document.querySelector('.swiper-matches');
+    if (!swiperEl) {
+      console.warn('Atlas ticker: no se encontró .swiper-matches');
+      return;
+    }
+
+    var wrapper = swiperEl.querySelector('.swiper-wrapper');
+    if (!wrapper) {
+      console.warn('Atlas ticker: no se encontró .swiper-wrapper dentro de .swiper-matches');
+      return;
+    }
+
+    ensureControls(swiperEl);
+
+    fetchAll().then(function (games) {
+      if (!games.length) {
+        console.warn('Atlas ticker: API no devolvió partidos');
+        return;
+      }
+
+      var live     = games.filter(function (g) { return g.statusGroup === 3; });
+      var upcoming = games.filter(function (g) { return g.statusGroup === 1 || g.statusGroup === 2; });
+      var current  = live[0] || upcoming[0] || null;
+      var currentId = current ? current.id : null;
+
+      if (live.length && !liveInterval) {
+        liveInterval = setInterval(render, 30000);
+      } else if (!live.length && liveInterval) {
+        clearInterval(liveInterval);
+        liveInterval = null;
+      }
+
+      var currentIndex = 0;
+      for (var i = 0; i < games.length; i++) {
+        if (games[i].id === currentId) { currentIndex = i; break; }
+      }
+
+      var scrollIndex;
+      if (live.length) {
+        scrollIndex = currentIndex;
+      } else if (upcoming.length && currentIndex > 0) {
+        scrollIndex = currentIndex - 1;
+      } else {
+        scrollIndex = Math.max(0, games.length - 1);
+      }
+
+      wrapper.innerHTML = games.map(function (g) {
+        return renderSlide(g, g.id === currentId);
+      }).join('');
+
+      if (swiperEl.swiper) {
+        try { swiperEl.swiper.destroy(true, true); } catch (e) {}
+      }
+
+      if (typeof Swiper !== 'undefined') {
+        // cssMode = scroll nativo: swipe con dedo en mobile, compatible con Webflow
+        var sw = new Swiper(swiperEl, {
+          slidesPerView: 'auto',
+          spaceBetween: 0,
+          cssMode: true,
+          navigation: {
+            nextEl: swiperEl.querySelector('.swiper-button-next'),
+            prevEl: swiperEl.querySelector('.swiper-button-prev'),
+          },
+        });
+        sw.slideTo(scrollIndex, 0);
+      } else {
+        console.warn('Atlas ticker: Swiper no disponible, usando scroll nativo');
+        wrapper.style.cssText = 'display:flex;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth';
+        var target = wrapper.children[scrollIndex];
+        if (target) setTimeout(function () {
+          target.scrollIntoView({ behavior: 'instant', inline: 'start', block: 'nearest' });
+        }, 50);
+      }
+
+    }).catch(function (e) {
+      console.error('Atlas ticker error:', e);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+
+})();
+</script>
+
+
+<script>
+// ── Swiper sección Afición (membresías) ───────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.swiper-aficion', {
+    slidesPerView: 1.1,
+    slidesPerGroup: 1,
+    spaceBetween: 16,
+    speed: 500,
+    navigation: {
+      nextEl: '.swiper-aficion-next',
+      prevEl: '.swiper-aficion-prev',
+    },
+    breakpoints: {
+      768: { slidesPerView: 2, spaceBetween: 20 },
+      992: { slidesPerView: 3, spaceBetween: 24, slidesPerGroup: 1 },
+    },
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var STEP_MS = 1200; // tiempo entre imágenes mientras hace hover
+
+  document.querySelectorAll('.w-slider').forEach(function (slider) {
+    // solo los sliders de las cards (los que tienen slides slider-ux-master)
+    if (!slider.querySelector('.slider-ux-master')) return;
+
+    var nextArrow = slider.querySelector('.w-slider-arrow-right');
+    if (!nextArrow) return;
+
+    var timer = null;
+
+    slider.addEventListener('mouseenter', function () {
+      if (timer) return;
+      timer = setInterval(function () { nextArrow.click(); }, STEP_MS);
+    });
+
+    slider.addEventListener('mouseleave', function () {
+      clearInterval(timer);
+      timer = null;
+    });
+  });
+});
+</script>
+
+<script>
+(function () {
+  function initFaqAccordion() {
+    var items = document.querySelectorAll('.section-faq .accordion-item');
+    if (!items.length) return;
+
+    items.forEach(function (item) {
+      var trigger = item.querySelector('.faq-trigger');
+      if (!trigger) return;
+
+      trigger.addEventListener('click', function () {
+        // En el momento del click, IX2 aún no cambió el estado —
+        // si el panel está oculto, está a punto de abrirse.
+        var panel = item.querySelector('.faq-container');
+        var isOpening = !panel || panel.style.display === 'none' || panel.style.display === '';
+
+        if (isOpening) {
+          // Cierra todos los demás que estén abiertos
+          items.forEach(function (other) {
+            if (other === item) return;
+            var otherPanel = other.querySelector('.faq-container');
+            var otherIsOpen = otherPanel && otherPanel.style.display !== 'none' && otherPanel.style.display !== '';
+            if (otherIsOpen) {
+              var otherTrigger = other.querySelector('.faq-trigger');
+              if (otherTrigger) otherTrigger.click();
+            }
+          });
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFaqAccordion);
+  } else {
+    initFaqAccordion();
+  }
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     ATLAS FC · Componente Boletos/Packs/PRN(Abonos) — script único
+     Desktop(>=768): Swiper + flechas (2/3) SOLO en tabs horizontales con 4+ cards.
+     Packs (stack vertical) NUNCA pagina. Abonos usa las MISMAS flechas.
+     Mobile(<768): scroll nativo del Designer (sin Swiper).
+     Cambio de tab robusto vía MutationObserver (sin depender del timing de Webflow).
+     ═══════════════════════════════════════════════════════════════════ -->
+<script>
+(function(){var CHEV='<div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4.8125 11.8125C4.70061 11.8125 4.58861 11.7697 4.50318 11.6843C4.33223 11.5133 4.33223 11.2365 4.50318 11.0657L8.56887 6.99999L4.50318 2.9343C4.33223 2.76335 4.33223 2.48652 4.50318 2.31567C4.67414 2.14483 4.95097 2.14472 5.12181 2.31567L9.49681 6.69067C9.66776 6.86163 9.66776 7.13846 9.49681 7.3093L5.12181 11.6843C5.03639 11.7697 4.92439 11.8125 4.8125 11.8125Z" fill="#656565"></path></svg></div>';
+if(!document.getElementById('comp-boletos-css')){var st=document.createElement('style');st.id='comp-boletos-css';st.textContent='.swiper-boletos{width:100%;max-width:100%;overflow:hidden}.swiper-boletos .swiper-wrapper{gap:0}.swiper-boletos .overlay-card{min-width:0;max-width:none;flex:0 0 auto}.swiper-boletos-nav{position:absolute;right:0;left:auto;z-index:6;gap:8px;align-items:center;display:none}@media(min-width:768px){.swiper-boletos-nav{display:flex}}.swiper-boletos-prev,.swiper-boletos-next{width:48px;height:48px;border-radius:6px;border:1px solid #656565;display:flex;align-items:center;justify-content:center;background:#FCF7F0;box-sizing:border-box;cursor:pointer}.swiper-boletos-prev{background:#656565;border-color:#656565}.swiper-boletos-prev svg path{fill:#FCF7F0}.swiper-boletos-next svg path{fill:#656565}.swiper-boletos-prev.swiper-button-disabled,.swiper-boletos-next.swiper-button-disabled{opacity:.35;pointer-events:none}';document.head.appendChild(st);}
+function isDesktop(){return window.matchMedia('(min-width:768px)').matches;}
+function prune(comp){var menu=comp.querySelector('.w-tab-menu'),panes=[].slice.call(comp.querySelectorAll('.w-tab-pane'));if(!menu||!panes.length)return false;var anyVisible=false,firstLink=null,current=menu.querySelector('.w--current');panes.forEach(function(pane){var key=pane.getAttribute('data-w-tab'),link=menu.querySelector('[data-w-tab="'+key+'"]'),cards=pane.querySelectorAll('.overlay-card').length;if(cards===0){pane.style.display='none';if(link){link.style.display='none';if(link===current)current=null;}}else{anyVisible=true;if(!firstLink)firstLink=link;}});var wrap=comp.closest('[class*="seoculta"]')||comp.closest('.container-hero-columns')||comp;if(!anyVisible){wrap.style.display='none';return true;}wrap.style.display='';if(!current&&firstLink)firstLink.click();var vis=[].filter.call(menu.querySelectorAll('.w-tab-link'),function(l){return l.style.display!=='none';});menu.style.display=vis.length<=1?'none':'';return true;}
+function buildNav(cont,swEl){var nav=document.createElement('div');nav.className='button-group align-bottom swiper-boletos-nav';var prev=document.createElement('a');prev.href='#';prev.className='swiper-boletos-prev w-inline-block';prev.innerHTML=CHEV;var svg=prev.querySelector('svg');if(svg)svg.style.transform='rotate(180deg)';var next=document.createElement('a');next.href='#';next.className='swiper-boletos-next w-inline-block';next.innerHTML=CHEV;nav.appendChild(prev);nav.appendChild(next);if(cont){var m=cont.querySelector('.w-tab-menu'),mv=m&&getComputedStyle(m).display!=='none'&&m.offsetHeight>0;if(mv){nav.style.top=m.offsetTop+'px';nav.style.height=m.offsetHeight+'px';}else{nav.style.top='0px';nav.style.height='40px';if(swEl)swEl.style.marginTop='52px';}cont.appendChild(nav);}return{nav:nav,prev:prev,next:next};}
+function wrapList(list){var items=[].slice.call(list.children),sw=document.createElement('div');sw.className='swiper swiper-boletos';list.parentNode.insertBefore(sw,list);sw.appendChild(list);list.classList.add('swiper-wrapper');items.forEach(function(c){c.classList.add('swiper-slide');});return sw;}
+function unwrap(sw){if(sw._sw){try{sw._sw.destroy(true,false);}catch(e){}}var list=sw.querySelector('.swiper-wrapper');if(list){list.classList.remove('swiper-wrapper');[].forEach.call(list.children,function(c){c.classList.remove('swiper-slide','swiper-slide-active','swiper-slide-next','swiper-slide-prev','swiper-slide-duplicate');});sw.parentNode.insertBefore(list,sw);}if(sw._nav&&sw._nav.parentNode)sw._nav.parentNode.removeChild(sw._nav);sw.parentNode.removeChild(sw);}
+function applyPane(pane){if(!pane)return;var existing=pane.querySelector('.swiper-boletos'),list=existing?existing.querySelector('.swiper-wrapper'):pane.querySelector('.cms-collection-list.w-dyn-items');if(!list)return;var count=list.querySelectorAll('.overlay-card').length;if(!isDesktop()||count<4){if(existing)unwrap(existing);return;}if(existing){if(existing._sw)existing._sw.update();return;}if(typeof Swiper==='undefined')return;if(getComputedStyle(list).flexDirection==='column')return;var cont=pane.closest('.tabs-boletos-container'),sw=wrapList(list),a=buildNav(cont,sw);sw._nav=a.nav;sw._sw=new Swiper(sw,{slidesPerView:2,spaceBetween:20,speed:500,watchOverflow:true,navigation:{prevEl:a.prev,nextEl:a.next},breakpoints:{992:{slidesPerView:3,spaceBetween:24}}});sw._sw.update();}
+function activePane(comp){return comp.querySelector('.w--tab-active');}
+function refreshNav(comp){comp.querySelectorAll('.swiper-boletos').forEach(function(sw){var pane=sw.closest('.w-tab-pane'),active=pane&&pane.classList.contains('w--tab-active');if(sw._nav)sw._nav.style.display=active?'':'none';});}
+function normalizeAbonos(comp){comp.querySelectorAll('.cms-card.swiper-abonos').forEach(function(card){if(card.swiper){try{card.swiper.destroy(true,true);}catch(e){}}card.classList.remove('swiper-abonos');var wl=card.querySelector('.swiper-wrapper');if(wl&&!wl.closest('.swiper-boletos'))wl.classList.remove('swiper-wrapper');});comp.querySelectorAll('.swiper-abonos-prev, .swiper-abonos-next').forEach(function(b){var grp=b.closest('.button-group');(grp||b).remove();});}
+function syncComp(comp){normalizeAbonos(comp);if(!isDesktop()){comp.querySelectorAll('.swiper-boletos').forEach(unwrap);}else{applyPane(activePane(comp));}refreshNav(comp);}
+var EN2ES={january:'ENERO',jan:'ENERO',february:'FEBRERO',feb:'FEBRERO',march:'MARZO',mar:'MARZO',april:'ABRIL',apr:'ABRIL',may:'MAYO',june:'JUNIO',jun:'JUNIO',july:'JULIO',jul:'JULIO',august:'AGOSTO',aug:'AGOSTO',september:'SEPTIEMBRE',sept:'SEPTIEMBRE',sep:'SEPTIEMBRE',october:'OCTUBRE',oct:'OCTUBRE',november:'NOVIEMBRE',nov:'NOVIEMBRE',december:'DICIEMBRE',dec:'DICIEMBRE'};
+function fmtFechas(){document.querySelectorAll('.js-fecha').forEach(function(el){var t=el.textContent.trim();if(!t)return;var low=t.toLowerCase(),mes=null,keys=Object.keys(EN2ES).sort(function(a,b){return b.length-a.length;});for(var i=0;i<keys.length;i++){if(low.indexOf(keys[i])>=0){mes=EN2ES[keys[i]];break;}}if(!mes)return;var nums=t.match(/\d+/g)||[],day=nums.filter(function(n){return n.length<=2;})[0]||nums[0];if(day)el.textContent=parseInt(day,10)+' DE '+mes;});document.querySelectorAll('.js-hora').forEach(function(el){var t=el.textContent.trim();if(!t||/hrs/i.test(t))return;var m=t.match(/(\d{1,2}):(\d{2})\s*(a\.?m\.?|p\.?m\.?)?/i);if(m){var h=parseInt(m[1],10),mm=m[2],ap=(m[3]||'').toLowerCase().replace(/\./g,'');if(ap==='pm'&&h<12)h+=12;if(ap==='am'&&h===12)h=0;el.textContent=('0'+h).slice(-2)+':'+mm+' Hrs';}else{el.textContent=t+' Hrs';}});}
+function watchTabs(comp){if(comp.__watched)return;comp.__watched=1;var mo=new MutationObserver(function(){syncComp(comp);fmtFechas();});comp.querySelectorAll('.w-tab-link,.w-tab-pane').forEach(function(el){mo.observe(el,{attributes:true,attributeFilter:['class']});});}
+function run(){var done=false;document.querySelectorAll('.tabs-boletos-container').forEach(function(comp){if(prune(comp))done=true;syncComp(comp);watchTabs(comp);});fmtFechas();return done;}
+var tries=0,timer=setInterval(function(){if(run()||++tries>25)clearInterval(timer);},400);if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){document.querySelectorAll('.tabs-boletos-container').forEach(function(comp){syncComp(comp);});},150);});})();
+</script>
+</body></html>

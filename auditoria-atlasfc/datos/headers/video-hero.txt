@@ -1,0 +1,41 @@
+== https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb%2F6a3ed965eb4a459ec3a0ab55_Video-Hero_mp4.mp4
+HTTP/1.1 200 Connection Established
+HTTP/2 200 
+content-type: video/mp4
+content-length: 1992454
+x-amz-id-2: 4Dai4WND3P4pHJOJVMZUjDZ8htuhjTGx+qgCHZNnbz3kxPpd6ajQJ907td9JHSCZlAPlSgsyk68NQE2Jt308mbJplgorsihi
+x-amz-request-id: 0FB7JKJRTB4V8KY1
+x-amz-storage-class: INTELLIGENT_TIERING
+x-amz-server-side-encryption: AES256
+x-amz-meta-mediaconvert-jobid: 1782503959849-at8mn5
+x-amz-version-id: tlmpbMMTTjMPgjEvthsfg14zgN8XTTg6
+server: cloudflare
+age: 4979
+cf-cache-status: HIT
+== https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb%2F6a3ed965eb4a459ec3a0ab55_Video-Hero_webm.webm
+HTTP/1.1 200 Connection Established
+HTTP/2 200 
+content-type: video/webm
+content-length: 2377508
+x-amz-id-2: ERXIHmWFj0oQxRe/TnJn6RR/v3mWnRq+RouJPmuqzZE1z4QOKBR1rPlUKXRXXJAremquCoknDAg=
+x-amz-request-id: WEPNQSGE51WR4F92
+x-amz-storage-class: INTELLIGENT_TIERING
+x-amz-server-side-encryption: AES256
+x-amz-meta-mediaconvert-jobid: 1782503959849-at8mn5
+x-amz-version-id: HU1Y2BO9_7zwxHVQDReD2WwNyaCK.31g
+server: cloudflare
+age: 2324
+cf-cache-status: HIT
+== https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb%2F6a3ed965eb4a459ec3a0ab55_Video-Hero_poster.0000000.jpg
+HTTP/1.1 200 Connection Established
+HTTP/2 200 
+content-type: image/jpeg
+content-length: 82910
+x-amz-id-2: eOclxgExVk45A9arFJ0dxMlz2AvqLkH+top9T6C1FMFxnJop3yoBa6hcKKHRX4TgyfOP9iURzYM=
+x-amz-request-id: SKXM582EA9Y8PZFP
+x-amz-server-side-encryption: AES256
+x-amz-meta-mediaconvert-jobid: 1782503959849-at8mn5
+x-amz-version-id: It_S1khMnrkoC4VvBQCQczgX39iHYctg
+server: cloudflare
+age: 5802
+cf-cache-status: HIT

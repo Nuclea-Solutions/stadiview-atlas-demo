@@ -1,0 +1,31 @@
+== https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/css/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.shared.e814e99e6.css
+HTTP/2 200 
+content-type: text/css
+content-length: 387051
+last-modified: Tue, 27 Oct 2026 18:00:03 GMT
+cache-control: public, max-age=31536000, immutable
+age: 10445
+cf-cache-status: HIT
+== https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bf/6adfc569b4720c4ef2872752_nota.jpg
+HTTP/2 200 
+content-type: image/jpeg
+content-length: 4137167
+last-modified: Mon, 26 Oct 2026 21:26:02 GMT
+cache-control: max-age=31536000
+age: 86295
+cf-cache-status: HIT
+== https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
+HTTP/2 200 
+content-type: application/javascript; charset=utf-8
+cache-control: public, max-age=604800, s-maxage=43200
+x-cache: HIT, HIT
+age: 38547
+cf-cache-status: HIT
+== https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69fcf3ea92d2cdb9abbec2bb
+HTTP/2 200 
+content-type: application/javascript
+content-length: 89476
+last-modified: Mon, 20 Jul 2020 17:53:02 GMT
+cache-control: max-age=84600, must-revalidate
+age: 57659
+x-cache: Hit from cloudfront

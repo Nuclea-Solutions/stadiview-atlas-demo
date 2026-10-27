@@ -1,0 +1,10 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+date: Tue, 27 Oct 2026 21:38:20 GMT
+server: Apache
+vary: Accept-Encoding
+content-length: 1000
+content-type: text/html; charset=UTF-8
+connection: close
+

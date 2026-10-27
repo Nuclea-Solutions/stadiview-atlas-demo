@@ -1,0 +1,9 @@
+404 ->   https://www.atlasfc.com.mx/articles/%C2%A1rojinegra-busca-el-pase-al-mundial-sub-17-21-27457
+301 -> https://www.atlasfc.com.mx/articles  https://www.atlasfc.com.mx/articles/
+301 -> https://www.atlasfc.com.mx/noticias  https://www.atlasfc.com.mx/noticias/
+404 ->   https://www.atlasfc.com.mx/plantel
+404 ->   https://www.atlasfc.com.mx/calendario
+301 -> https://www.atlasfc.com.mx/aficion  https://www.atlasfc.com.mx/boletos
+404 ->   https://www.atlasfc.com.mx/tienda
+404 ->   https://www.atlasfc.com.mx/post
+301 -> https://atlasfc.com.mx/home-femenil  https://atlasfc.com.mx/home-femenil/

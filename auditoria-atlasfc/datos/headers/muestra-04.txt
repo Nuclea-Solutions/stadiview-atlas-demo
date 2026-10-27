@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 27 Oct 2026 21:23:21 GMT
+content-type: text/html; charset=utf-8
+set-cookie: _cfuvid=76Oc5fCRRlr7FcOxlgN6KDBBz2Mwj2fFYIvypGHaeNk-1793136201.3941057-1.0.1.1-8xnKgd5yUUwnfH8VqiGGyq0y9Uo8r7SdJEAFHKW6Lzw; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.atlasfc.com.mx
+cf-ray: a514c2eab8150b2a-IAD
+cf-cache-status: HIT
+age: 4221
+content-encoding: gzip
+last-modified: Tue, 27 Oct 2026 20:12:59 GMT
+link: <https://cdn.prod.website-files.com>; rel=preconnect; crossorigin, <https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/css/atlas-f-c-b6aa31b00b82cdcf1d88eb4ab94f2.shared.e814e99e6.css>; rel=preload; as=style; crossorigin; integrity="sha384-6BTpnmzK9S6rxXZTMVCcX4A4Hc5HNwx6I1hNWSjpxlVQFiXcamXJO7vdO3wBcnIp", <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin
+server: cloudflare
+strict-transport-security: max-age=31536000
+vary: accept-encoding
+surrogate-control: max-age=35222
+surrogate-key: www.atlasfc.com.mx 69fcf3ea92d2cdb9abbec2bb pageId:6a29eb962eae2b97b5ea846d 6a207ff15ed1e510de2fe95e 6a2082780779e0133847aceb 6a2087c952b71a1bd38cb440 69fcf3ea92d2cdb9abbec2d3 69fcf3ea92d2cdb9abbec30c
+x-lambda-id: f6247a38-6f32-4b35-b6f5-bc4883dd03b9
+x-wf-region: us-east-1
+alt-svc: h3=":443"; ma=86400
+
