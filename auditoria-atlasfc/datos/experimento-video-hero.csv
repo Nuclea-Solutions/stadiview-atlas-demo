@@ -1,0 +1,8 @@
+variante,codec,resolucion,duracion_s,audio,bytes,KiB,reduccion_vs_mp4_original,nota
+Original MP4 (servido hoy),H.264,1280x720,8.07,no,1992454,1946,0%,"Se pide 2 veces en la home (los dos <video>, uno con display:none): 2 x 1,948 KiB transferidos"
+Original WebM (servido hoy),VP8,1280x720,8.07,no,2377508,2322,+19%,"Declarado después del MP4; el navegador elige MP4"
+Recompresión H.264 CRF30 720p,H.264,1280x720,8.07,no,648269,633,-67%,ffmpeg -crf 30 -preset slow +faststart
+Recompresión AV1 CRF42 720p,AV1 (SVT),1280x720,8.07,no,613462,599,-69%,ffmpeg libsvtav1 -crf 42 -preset 6
+Recompresión H.264 CRF30 480p,H.264,854x480,8.07,no,336542,329,-83%,Variante móvil si se quisiera video en celular
+Póster JPEG (servido hoy),JPEG,1280x720,,,82910,81,,
+Póster AVIF q50,AVIF,1280x720,,,32542,32,,Recomendado en móvil en lugar del video
